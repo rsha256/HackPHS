@@ -9,10 +9,5 @@ else
     source venv/bin/activate
     echo $'\nCreated & Sourced Virtual Environment!\n'
 fi
-cd ~/RecycleML/recycleML 
-if [ -d "instance" ]; then
-    echo $'\ndatabase is a-ok\n'
-else
-    flask init-db
-fi
+cd recycleML
 flask run

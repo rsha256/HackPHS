@@ -238,7 +238,7 @@ p {
 
 #hero-area {
     padding: 200px 0;
-    background-image: url(../images/banner-1.png);
+    background-image: url(../img/banner-1.png);
     background-repeat: no-repeat;
     background-position: left bottom;
     background-size: cover;
@@ -308,14 +308,14 @@ p {
 }
 
 #hero-area.slider-bg {
-    background-image: url(../images/banner-2.jpg);
+    background-image: url(../img/banner-2.jpg);
     background-repeat: no-repeat;
     background-position: left bottom;
     background-size: cover;
 }
 
 #hero-area.hero-newsletter {
-    background-image: url(../images/banner-3.png);
+    background-image: url(../img/banner-3.png);
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: cover;
@@ -625,7 +625,7 @@ p {
     top: 0;
     width: 50%;
     height: 100%;
-    background-image: url(../images/watch-img-2.jpg);
+    background-image: url(../img/watch-img-2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center
@@ -681,7 +681,7 @@ p {
 }
 
 .video-player-wrap-two {
-    background-image: url(../images/watch-img-2.jpg);
+    background-image: url(../img/watch-img-2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -840,7 +840,7 @@ p {
 ---------------------------------------------------------------------------------------*/
 
 #newsletter-area.bg {
-    background-image: url(../images/banner-2.jpg);
+    background-image: url(../img/banner-2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -937,7 +937,7 @@ p {
 ---------------------------------------------------------------------------------------*/
 #discount-area {
     padding: 100px 0;
-    background-image: url(../images/banner-4.jpg);
+    background-image: url(../img/banner-4.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1081,14 +1081,14 @@ p {
 
 #testi-area {
     padding: 90px 0 180px;
-    background-image: url(../images/testi-bg.png);
+    background-image: url(../img/testi-bg.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover
 }
 
 #testi-area.bg {
-    background-image: url(../images/banner-2.jpg);
+    background-image: url(../img/banner-2.jpg);
 }
 
 .testi-single {
@@ -1243,7 +1243,7 @@ p {
 #footer {
     background-color: #2e1278;
     padding: 100px 0;
-    background-image: url(../images/map-bg.png);
+    background-image: url(../img/map-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center
