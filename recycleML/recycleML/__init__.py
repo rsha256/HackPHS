@@ -26,20 +26,20 @@ def create_app(test_config=None):
     except OSError:
         pass
 
-    @app.route("/hello")
-    def hello():
-        return "Hello, World!"
-
+    # @app.route("/hello")
+    # def hello():
+    #     return "Hello, World!"
+ 
     # register the database commands
     from recycleML import db
 
     db.init_app(app)
 
-    # apply the blueprints to the app
-    from recycleML import auth, blog
+    ## apply the blueprints to the app
+    # from recycleML import blog
 
-    app.register_blueprint(auth.bp)
-    app.register_blueprint(blog.bp)
+    # app.register_blueprint(blog.bp)
+    ##
 
     # make url_for('index') == url_for('blog.index')
     # in another app, you might define a separate main index here with
