@@ -1,985 +1,733 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
-   <meta charset="utf-8" />
-   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-   <meta name="viewport" content="width=device-width, initial-scale=1" />
-   <meta name="RecycleML"
-      content="RecycleML — Responsive application which classifies waste to help you recycle without thinking." />
-   <meta name="keywords"
-      content="waste, classification, recycle, environment, application, technology, waste classification" />
-
-   <!-- Title -->
-   <title>RecycleML — Simple Waste Classification</title>
-
-   <!-- Favicon -->
-   <link rel="icon" href="../static/img/favicon.png" />
-
-   <!-- Core Stylesheet -->
-   <link href="../static/img/style.css" rel="stylesheet" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords"
+        content="waste, classification, recycle, environment, application, technology, waste classification" />
+    <meta name="description" content="RecycleML — Responsive application which classifies waste to help you recycle without thinking.">
+    <meta name="RecycleML"
+        content="RecycleML — Responsive application which classifies waste to help you recycle without thinking." />
+    <title>RecycleML - Simple Waste Classification</title>
+    <!--favicon-->
+    <link rel="shortcut icon" type="image/png" href="../static/img/favicon.png">
+    <!--bootstrap css-->
+    <link rel="stylesheet" type="text/css" href="../static/css/bootstrap.min.css">
+    <!--owl carousel css-->
+    <link rel="stylesheet" type="text/css" href="../static/css/owl.carousel.min.css">
+    <!--magnific popup css-->
+    <link rel="stylesheet" type="text/css" href="../static/css/magnific-popup.css">
+    <!--icofont css-->
+    <link rel="stylesheet" type="text/css" href="../static/css/icofont.min.css">
+    <!--animate css-->
+    <link rel="stylesheet" type="text/css" href="../static/css/animate.css">
+    <!--main css-->
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    <!--responsive css-->
+    <link rel="stylesheet" type="text/css" href="../static/css/responsive.css">
 </head>
 
 <body>
-   <!-- ***** Header Area Start ***** -->
-   <header class="header_area headroom">
-      <div class="container-fluid" style="width:100% !important;">
-         <div class="row align-items-center">
-            <!-- Menu Area Start -->
-            <div class="col-12">
-               <div class="menu_area">
-                  <nav class="navbar navbar-expand-lg navbar-light px-1">
-                     <!-- Logo -->
-                     <a href="#home"><img src="img/bg-img/logo.png" class="img-fluid logo-width" alt="Brand Logo" /></a>
-                     <h4 class="logo-font mt-2 ml-2">RecycleML</h4>
-                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ca-navbar"
-                        aria-controls="ca-navbar" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                     </button>
-                     <!-- Menu Area -->
-                     <div class="collapse navbar-collapse" id="ca-navbar">
-                        <ul class="navbar-nav ml-auto" id="nav">
-                           <li class="nav-item"><a class="nav-link px-3" href="#demos">Demos</a></li>
-                           <li class="nav-item"><a class="nav-link px-3" href="#applications">Apps</a></li>
-                           <li class="nav-item"><a class="nav-link px-3" href="#cards">Cards</a></li>
-                           <li class="nav-item"><a class="nav-link px-3" href="#pages">Pages</a></li>
-                           <li class="nav-item"><a class="nav-link px-3" href="#faq">Support</a></li>
-                           <li class="nav-item buynow-btn ml-2">
-                              <a class="nav-link px-4"
-                                 href="https://1.envato.market/materialize_admin"
-                                 target="_blank">Buy Now</a>
-                           </li>
+    <!--star preloader-->
+    <div class="preloader">
+        <div class="d-table">
+            <div class="d-table-cell align-middle">
+                <div class="spinner">
+                    <div class="double-bounce1"></div>
+                    <div class="double-bounce2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end preloader-->
+    <!--start header-->
+    <header id="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-md">
+                <div class="container">
+                    <!--logo-->
+                    <a class="logo" href="#"><img src="assets/img/logo.png" alt="logo" /></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+                        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar"><i class="icofont-navigation-menu"></i></span>
+                    </button>
+                    <!--navbar links-->
+                    <div class="collapse navbar-collapse" id="navbarContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#" data-scroll-nav="0">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-scroll-nav="1">Features</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-scroll-nav="2">Product</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-scroll-nav="3">Faq</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-scroll-nav="4">Review</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-scroll-nav="5">Contact</a>
+                            </li>
                         </ul>
-                     </div>
-                  </nav>
-               </div>
-            </div>
-         </div>
-      </div>
-   </header>
-   <!-- ***** Header Area End ***** -->
-
-   <!-- ***** Wellcome Area Start ***** -->
-   <section class="wellcome_area" id="home">
-      <div class="container-fluid h-100">
-         <div class="row h-100 align-items-center">
-            <div class="col-lg-4 order-lg-1 order-md-2">
-               <div class="wellcome-heading">
-                  <h2 class="mb-0 title-font-lg mb-2 mt-5">RecycleML</h2>
-                  <p class="text-bold sub-font-lg">
-                     #1 Selling & Most Popular Material Design Admin Template of All Time Join The 4,000+ Satisfied
-                     Customers
-                  </p>
-                  <h6>- <b>5 Different</b> layouts</h6>
-                  <h6>- Based on latest <b>Materializecss</b></h6>
-                  <h6>- <b>Version 5.0</b> is Live</h6>
-                  <a class="btn submit-btn mt-3 mr-2"
-                     href="https://pixinvent.com/materialize-material-design-admin-template/html/ltr/vertical-modern-menu-template/"
-                     target="_blank"><span>Live Demo</span></a>
-                  <a class="btn buy-btn mt-3"
-                     href="https://1.envato.market/materialize_admin"
-                     target="_blank"><span>Buy Now</span></a>
-               </div>
-            </div>
-            <div class="col-lg-8 order-lg-2 order-md-1">
-               <div class="welcome-thumb" data-wow-delay="0.5s">
-                  <a href="https://pixinvent.com/materialize-material-design-admin-template/html/ltr/vertical-modern-menu-template/"
-                     target="_blank">
-                     <img src="img/bg-img/welcome-img.jpg" alt="Responsive image" />
-                  </a>
-               </div>
-            </div>
-         </div>
-      </div>
-   </section>
-   <!-- ***** Wellcome Area End ***** -->
-
-   <!-- Hire US -->
-
-   <a class="btn hire-us" href="https://goo.gl/forms/VyFbfVnmjNeydq0Y2" target="_blank"><span><span
-            class="ti-user mr-1 align-middle font-900"></span> Hire Us</span></a>
-   <!-- Hire US -->
-   <!-- ***** Demos ***** -->
-   <section class="bg-grey p-150" id="demos">
-      <div class="special_description_area">
-         <div class="container-fluid">
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--end header-->
+    <!--start hero area-->
+    <section id="hero-area" class="default" data-scroll-index="0">
+        <div class="container">
             <div class="row">
-               <div class="col-lg-12 text-center">
-                  <div class="section-heading">
-                     <h2>Choose layout</h2>
-                  </div>
-                  <p class="mb-5">
-                     Materialize - Material Design Admin Template has been the #1 selling material design admin template
-                     for more than 4+ years, <br />
-                     making it the most trusted and complete Material Design Admin Template on the market.
-                  </p>
-               </div>
-               <div class="col-lg-4 col-md-6 col-12 mt-4 text-center wow fadeInDown show-image card-hover">
-                  <h5 class="mt-4 mb-4">Vertical Modern Menu Template</h5>
-                  <a class="btn btn-secondary mb-4"
-                     href="https://pixinvent.com/materialize-material-design-admin-template/html/ltr/vertical-modern-menu-template/"
-                     target="_blank">Live Preview</a>
-                  <a href="https://pixinvent.com/materialize-material-design-admin-template/html/ltr/vertical-modern-menu-template/"
-                     target="_blank">
-                     <img class="border-grey" src="img/scr-img/vertical-modern-menu-template.jpg" alt="Apps Image" />
-                  </a>
-               </div>
-               <div class="col-lg-4 col-md-6 col-12 mt-4 text-center wow fadeInDown show-image card-hover">
-                  <h5 class="mt-4 mb-4">Vertical Menu Nav Dark Template</h5>
-                  <a class="btn btn-secondary mb-4"
-                     href="https://pixinvent.com/materialize-material-design-admin-template/html/ltr/vertical-menu-nav-dark-template/"
-                     target="_blank">Live Preview</a>
-                  <a href="https://pixinvent.com/materialize-material-design-admin-template/html/ltr/vertical-menu-nav-dark-template/"
-                     target="_blank">
-                     <img class="border-grey" src="img/scr-img/vertical-menu-nav-dark-template.jpg" alt="Apps Image" />
-                  </a>
-               </div>
-               <div class="col-lg-4 col-md-6 col-12 mt-4 text-center wow fadeInDown show-image card-hover">
-                  <h5 class="mt-4 mb-4">Vertical Gradient Menu Template</h5>
-                  <a class="btn btn-secondary mb-4"
-                     href="https://pixinvent.com/materialize-material-design-admin-template/html/ltr/vertical-gradient-menu-template/"
-                     target="_blank">Live Preview</a>
-                  <a href="https://pixinvent.com/materialize-material-design-admin-template/html/ltr/vertical-gradient-menu-template/"
-                     target="_blank">
-                     <img class="border-grey" src="img/scr-img/vertical-gradient-menu-template.jpg" alt="Apps Image" />
-                  </a>
-               </div>
-               <div class="col-lg-4 col-md-6 col-12 mt-4 text-center wow fadeInDown show-image card-hover">
-                  <h5 class="mt-4 mb-4">Vertical Dark Menu Template</h5>
-                  <a class="btn btn-secondary mb-4"
-                     href="https://pixinvent.com/materialize-material-design-admin-template/html/ltr/vertical-dark-menu-template/"
-                     target="_blank">Live Preview</a>
-                  <a href="https://pixinvent.com/materialize-material-design-admin-template/html/ltr/vertical-dark-menu-template"
-                     target="_blank">
-                     <img class="border-grey" src="img/scr-img/vertical-dark-menu-template.jpg" alt="Apps Image" />
-                  </a>
-               </div>
-               <div class="col-lg-4 col-md-6 col-12 mt-4 text-center wow fadeInDown show-image card-hover">
-                  <h5 class="mt-4 mb-4">Horizontal Menu Template</h5>
-                  <a class="btn btn-secondary mb-4"
-                     href="https://pixinvent.com/materialize-material-design-admin-template/html/ltr/horizontal-menu-template/"
-                     target="_blank">Live Preview</a>
-                  <a href="https://pixinvent.com/materialize-material-design-admin-template/html/ltr/horizontal-menu-template/"
-                     target="_blank">
-                     <img class="border-grey" src="img/scr-img/horizontal-menu-template.jpg" alt="Apps Image" />
-                  </a>
-               </div>
-            </div>
-         </div>
-      </div>
-   </section>
-   <!-- ***** Demos End ***** -->
-
-   <!-- ***** Review ***** -->
-   <section class="gradient-primary p-150" id="review">
-      <div class="special_description_area">
-         <div class="container-fluid">
-            <div class="row">
-               <div class="col-sm-8 offset-sm-2">
-                  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                     <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                     </ol>
-                     <div class="carousel-inner">
-                        <div class="carousel-item active">
-                           <p class="mb-0 text-white">
-                              Very good work, clean code, and the documentation is very correct, implementation is now
-                              easy and quick result, thanks a lot and i hope you will improve it , the support is
-                              wonderfull as well
-                           </p>
-                           <div class="text-white text-right mt-3">
-                              <h5 class="mt-3 text-white">dgu123</h5>
-                              <span class="ti-star"></span> <span class="ti-star"></span> <span class="ti-star"></span>
-                              <span class="ti-star"></span> <span class="ti-star"></span>
-                           </div>
+                <!--start caption image-->
+                <div class="col-md-5">
+                    <div class="caption-img">
+                        <img src="assets/img/watch-1.png" class="img-fluid" alt="" />
+                    </div>
+                </div>
+                <!--end caption image-->
+                <!--start caption content-->
+                <div class="col-md-7">
+                    <div class="caption">
+                        <h1 class="text-white">Best Landing Page For Product Showcase</h1>
+                        <p class="text-white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus
+                            hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id,
+                            mattis vel, nisi. Sed pretium ligula.</p>
+                        <div class="hero-btn">
+                            <a class="bg" href="#">Buy For $199</a><a href="#">More Info</a>
                         </div>
-                        <div class="carousel-item">
-                           <p class="mb-0 text-white">
-                              Very well designend and coded. Really easy to use for any type of project you might have
-                              where you need a Admin panel. Nice job from the developers of this theme.
-                           </p>
-                           <div class="text-white text-right mt-3">
-                              <h5 class="mt-3 text-white">Marino1988</h5>
-                              <span class="ti-star"></span> <span class="ti-star"></span> <span class="ti-star"></span>
-                              <span class="ti-star"></span> <span class="ti-star"></span>
-                           </div>
+                    </div>
+                </div>
+                <!--end caption content-->
+            </div>
+        </div>
+    </section>
+    <!--end hero area-->
+    <!--start about area-->
+    <section id="about-area" class="default">
+        <div class="container">
+            <div class="row">
+                <!--start about content-->
+                <div class="col-md-6">
+                    <div class="about-cont">
+                        <h5>About Watch</h5>
+                        <h2>Awesome digital watch can make your life easier</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis
+                            eros. Nullam malesuada erat ut turpis.</p>
+                        <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.
+                            Aenean dignissim pellentesque felis.</p>
+                        <ul>
+                            <li><i class="icofont-check"></i> High Quality Product</li>
+                            <li><i class="icofont-check"></i> Modern And New Design</li>
+                            <li><i class="icofont-check"></i> Multiple Color Available</li>
+                        </ul>
+                        <a href="#product-area">Read More</a>
+                    </div>
+                </div>
+                <!--end about content-->
+                <!--start about image-->
+                <div class="col-md-6">
+                    <div class="about-img">
+                        <img src="assets/img/watch-img.jpg" class="img-fluid" alt="" />
+                    </div>
+                </div>
+                <!--end about image-->
+            </div>
+        </div>
+    </section>
+    <!--end about area-->
+    <!--start core feature area-->
+    <section id="core-feat-area" class="bg-gray" data-scroll-index="1">
+        <div class="container">
+            <div class="row">
+                <!--start heading-->
+                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+                    <div class="heading text-center">
+                        <h5>Core Features</h5>
+                        <h2>Our product has lots of excellent core features for smart people.</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic explicabo voluptas nisi iste
+                            reiciendis, tempore commodi necessitatibus, laborum laudantium.</p>
+                    </div>
+                </div>
+                <!--end heading-->
+            </div>
+            <div class="row">
+                <!--start core feature single-->
+                <div class="col-lg-4 col-md-6">
+                    <div class="core-feat-single text-center">
+                        <i class="icofont-globe"></i>
+                        <h4>GPRS Tracking</h4>
+                        <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.
+                            Aenean dignissim.</p>
+                    </div>
+                </div>
+                <!--end core feature single-->
+                <!--start core feature single-->
+                <div class="col-lg-4 col-md-6">
+                    <div class="core-feat-single text-center">
+                        <i class="icofont-alarm"></i>
+                        <h4>Notification Alart</h4>
+                        <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.
+                            Aenean dignissim.</p>
+                    </div>
+                </div>
+                <!--end core feature single-->
+                <!--start core feature single-->
+                <div class="col-lg-4 col-md-6">
+                    <div class="core-feat-single text-center">
+                        <i class="icofont-video"></i>
+                        <h4>Instant Video Call</h4>
+                        <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.
+                            Aenean dignissim.</p>
+                    </div>
+                </div>
+                <!--end core feature single-->
+                <!--start core feature single-->
+                <div class="col-lg-4 col-md-6">
+                    <div class="core-feat-single text-center">
+                        <i class="icofont-chat"></i>
+                        <h4>User Live Chat</h4>
+                        <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.
+                            Aenean dignissim.</p>
+                    </div>
+                </div>
+                <!--end core feature single-->
+                <!--start core feature single-->
+                <div class="col-lg-4 col-md-6">
+                    <div class="core-feat-single text-center">
+                        <i class="icofont-brand-android-robot"></i>
+                        <h4>Install Any App</h4>
+                        <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.
+                            Aenean dignissim.</p>
+                    </div>
+                </div>
+                <!--end core feature single-->
+                <!--start core feature single-->
+                <div class="col-lg-4 col-md-6">
+                    <div class="core-feat-single text-center">
+                        <i class="icofont-dart"></i>
+                        <h4>Attractive Design</h4>
+                        <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.
+                            Aenean dignissim.</p>
+                    </div>
+                </div>
+                <!--end core feature single-->
+            </div>
+        </div>
+    </section>
+    <!--end core feature area-->
+    <!--start video area-->
+    <section id="video-area">
+        <div class="container">
+            <div class="row">
+                <!--start video content-->
+                <div class="col-md-6 offset-md-6">
+                    <div class="video-cont">
+                        <h5>Product Demo</h5>
+                        <h2>Watch the demo video for more information about our products.</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis
+                            eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit,
+                            posuere a, pede.</p>
+                        <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.
+                            Aenean dignissim pellentesque felis.</p>
+                        <a href="#product-area">Visit Our Store</a>
+                    </div>
+                </div>
+                <!--end video content-->
+            </div>
+        </div>
+        <!--start video plyer-->
+        <div class="video-player-wrap">
+            <div class="video-player d-table text-center">
+                <div class="d-table-cell align-middle">
+                    <a class="popup-video" href="https://www.youtube.com/watch?v=clXBiR01kUM"><i
+                            class="icofont-play"></i></a>
+                </div>
+            </div>
+        </div>
+        <!--end video plyer-->
+    </section>
+    <!--end video area-->
+    <!--start why choose area-->
+    <section id="why-chose-area" class="bg-gray">
+        <div class="container">
+            <div class="row">
+                <!--start heading-->
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="heading text-center">
+                        <h5>Why Choose Our Product</h5>
+                        <h2>We are providing best and high quality products. Why we are best?</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic explicabo voluptas nisi iste
+                            reiciendis, tempore commodi necessitatibus, laborum laudantium.</p>
+                    </div>
+                </div>
+                <!--end heading-->
+            </div>
+            <div class="row">
+                <!--start why choose image-->
+                <div class="col-md-6">
+                    <div class="why-chose-img">
+                        <img class="img-fluid" src="assets/img/watch-img-4.jpg" alt="image">
+                    </div>
+                </div>
+                <!--end why choose image-->
+                <!--start why choose content-->
+                <div class="col-md-6">
+                    <div class="why-chose-cont">
+                        <!--start why choose single-->
+                        <div class="why-chose-single">
+                            <div class="icon">
+                                <i class="icofont-check"></i>
+                            </div>
+                            <div class="cont">
+                                <h5>Our all products are high quality and fashionable with lifetime guarantee</h5>
+                            </div>
                         </div>
-                        <div class="carousel-item">
-                           <p class="mb-0 text-white">
-                              I am a very experienced programmer and this is one of the best projects I've ever seen. It
-                              is very easy to modify and you already have everything done. I am using it for an
-                              eCommerce
-                              project and this has everything I needed for.
-                           </p>
-                           <div class="text-white text-right mt-3">
-                              <h5 class="mt-3 text-white">andresams</h5>
-                              <span class="ti-star"></span> <span class="ti-star"></span> <span class="ti-star"></span>
-                              <span class="ti-star"></span> <span class="ti-star"></span>
-                           </div>
+                        <!--end why choose single-->
+                        <!--start why choose single-->
+                        <div class="why-chose-single">
+                            <div class="icon">
+                                <i class="icofont-check"></i>
+                            </div>
+                            <div class="cont">
+                                <h5>Our all products are high quality and fashionable with lifetime guarantee</h5>
+                            </div>
                         </div>
-                     </div>
-                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                     </a>
-                  </div>
-               </div>
+                        <!--end why choose single-->
+                        <!--start why choose single-->
+                        <div class="why-chose-single">
+                            <div class="icon">
+                                <i class="icofont-check"></i>
+                            </div>
+                            <div class="cont">
+                                <h5>We are providing 24 hours dedicated support for our all customers</h5>
+                            </div>
+                        </div>
+                        <!--end why choose single-->
+                    </div>
+                </div>
+                <!--end why choose content-->
             </div>
-         </div>
-      </div>
-   </section>
-   <!-- ***** Review ***** -->
-
-   <!-- ***** Applications ***** -->
-   <section class="bg-white p-150" id="applications">
-      <div class="special_description_area">
-         <div class="container-fluid">
+        </div>
+    </section>
+    <!--end why choose area-->
+    <!--start product area-->
+    <section id="product-area" data-scroll-index="2">
+        <div class="container">
             <div class="row">
-               <div class="col-lg-12 text-center">
-                  <div class="section-heading">
-                     <h2>Applications</h2>
-                  </div>
-                  <p class="mb-5">
-                     Materialize - Material Design Admin Template comes with built in
-                     <strong>Email, <br />Chat, ToDo, Contacts, Full Calender, eCommerce</strong> many & more useful
-                     applications for your next project.
-                  </p>
-               </div>
-               <div class="col-lg-4 col-md-6 col-12 mt-4 text-center image-hover wow fadeInDown mt-5">
-                  <a href="https://pixinvent.com/materialize-material-design-admin-template/html/ltr/vertical-modern-menu-template/app-email.html"
-                     target="_blank"><img class="border-grey" src="img/scr-img/app-mail.jpg" alt="Apps Image" /></a>
-                  <h5 class="mt-4 mb-0"><span class="ti-email"></span> Email Application</h5>
-                  <div class="btn-group mt-2" role="group" aria-label="Basic example"></div>
-               </div>
-               <div class="col-lg-4 col-md-6 col-12 mt-4 text-center image-hover wow fadeInDown mt-5">
-                  <a href="https://pixinvent.com/materialize-material-design-admin-template/html/ltr/vertical-modern-menu-template/app-chat.html"
-                     target="_blank"><img class="border-grey" src="img/scr-img/app-chat.jpg" alt="Apps Image" /></a>
-                  <h5 class="mt-4 mb-0"><span class="ti-comment"></span> Chat Application</h5>
-                  <div class="btn-group mt-2" role="group" aria-label="Basic example"></div>
-               </div>
-               <div class="col-lg-4 col-md-6 col-12 mt-4 text-center image-hover wow fadeInDown mt-5">
-                  <a href="https://pixinvent.com/materialize-material-design-admin-template/html/ltr/vertical-modern-menu-template/app-todo.html"
-                     target="_blank"><img class="border-grey" src="img/scr-img/app-todo.jpg" alt="Apps Image" /></a>
-                  <h5 class="mt-4 mb-0"><span class="ti-control-pause"></span> Todo</h5>
-                  <div class="btn-group mt-2" role="group" aria-label="Basic example"></div>
-               </div>
-               <div class="col-lg-4 col-md-6 col-12 mt-4 text-center image-hover wow fadeInDown mt-5">
-                  <a href="https://pixinvent.com/materialize-material-design-admin-template/html/ltr/vertical-modern-menu-template/app-contacts.html"
-                     target="_blank"><img class="border-grey" src="img/scr-img/app-contacts.jpg" alt="Apps Image" /></a>
-                  <h5 class="mt-4 mb-0"><span class="ti-agenda"></span> Contacts</h5>
-                  <div class="btn-group mt-2" role="group" aria-label="Basic example"></div>
-               </div>
-               <div class="col-lg-4 col-md-6 col-12 mt-4 text-center image-hover wow fadeInDown mt-5">
-                  <a href="https://pixinvent.com/materialize-material-design-admin-template/html/ltr/vertical-modern-menu-template/app-calendar.html"
-                     target="_blank"><img class="border-grey" src="img/scr-img/app-calendar.jpg" alt="Apps Image" /></a>
-                  <h5 class="mt-4 mb-0"><span class="ti-calendar"></span> App Full Calender</h5>
-                  <div class="btn-group mt-2" role="group" aria-label="Basic example"></div>
-               </div>
-               <div class="col-lg-4 col-md-6 col-12 mt-4 text-center image-hover wow fadeInDown mt-5">
-                  <a href="https://pixinvent.com/materialize-material-design-admin-template/html/ltr/vertical-modern-menu-template/eCommerce-products-page.html"
-                     target="_blank"><img class="border-grey" src="img/scr-img/app-ecommerce.jpg"
-                        alt="Apps Image" /></a>
-                  <h5 class="mt-4 mb-0"><span class="ti-shopping-cart"></span> eCommerce</h5>
-                  <div class="btn-group mt-2" role="group" aria-label="Basic example"></div>
-               </div>
+                <!--start heading-->
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="heading text-center">
+                        <h5>Our Product</h5>
+                        <h2>We have lots of excellent and high quality products. Check now</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic explicabo voluptas nisi iste
+                            reiciendis, tempore commodi necessitatibus, laborum laudantium.</p>
+                    </div>
+                </div>
+                <!--end heading-->
             </div>
-         </div>
-      </div>
-   </section>
-   <!-- ***** Applications End ***** -->
-
-   <!-- ***** Cool Facts Area Start ***** -->
-   <section class="cool-facts-area clearfix">
-      <div class="container-fluid">
-         <div class="row text-center">
-            <!-- Single Cool Fact-->
-            <div class="col-lg-3 col-md-6 col-sm-12 mt-4">
-               <div class="single-cool-fact wow fadeInUp" data-wow-delay="0.8s">
-                  <div class="counter-area">
-                     <h3><span class="counter">4</span>+</h3>
-                  </div>
-                  <div class="cool-facts-content">
-                     <p>Unique Menu Styles</p>
-                  </div>
-               </div>
-            </div>
-            <!-- Single Cool Fact-->
-            <div class="col-lg-3 col-md-6 col-sm-12 mt-4">
-               <div class="single-cool-fact wow fadeInUp" data-wow-delay="0.6s">
-                  <div class="counter-area">
-                     <h3><span class="counter">5</span>+</h3>
-                  </div>
-                  <div class="cool-facts-content">
-                     <p>Workable Applications</p>
-                  </div>
-               </div>
-            </div>
-            <!-- Single Cool Fact-->
-            <div class="col-lg-3 col-md-6 col-sm-12 mt-4">
-               <div class="single-cool-fact wow fadeInUp" data-wow-delay="0.4s">
-                  <div class="counter-area">
-                     <h3><span class="counter">300</span>+</h3>
-                  </div>
-                  <div class="cool-facts-content">
-                     <p>Components</p>
-                  </div>
-               </div>
-            </div>
-            <!-- Single Cool Fact-->
-            <div class="col-lg-3 col-md-6 col-sm-12 mt-4">
-               <div class="single-cool-fact wow fadeInUp" data-wow-delay="0.2s">
-                  <div class="counter-area">
-                     <h3><span class="counter">4,000</span>+</h3>
-                  </div>
-                  <div class="cool-facts-content">
-                     <p>Happy Customers</p>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </section>
-   <!-- ***** Cool Facts Area End ***** -->
-
-   <!-- ***** Advance Cards ***** -->
-   <section class="bg-grey p-150" id="cards">
-      <div class="special_description_area">
-         <div class="container-fluid">
             <div class="row">
-               <div class="col-lg-12 text-center mb-5">
-                  <div class="section-heading">
-                     <h2>Advance Cards</h2>
-                  </div>
-                  <p>
-                     Materialize - Material Design Admin Template provides 100+ Advance Cards for Analytics, eCommerce,
-                     <br />
-                     Statistics, Charts, Maps, Interactive and Social.
-                  </p>
-               </div>
-               <div class="col-12">
-                  <img src="img/scr-img/cards.png" alt="Cards Image" />
-               </div>
+                <!--start product single-->
+                <div class="col-lg-4 col-md-6">
+                    <div class="prod-single text-center">
+                        <img src="assets/img/product-1.jpg" class="img-fluid" alt="" />
+                        <div class="prod-info">
+                            <h4>Olimus Blue</h4>
+                            <h5>$188.00</h5>
+                            <a href="#">Order Now <i class="icofont-long-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!--end product single-->
+                <!--start product single-->
+                <div class="col-lg-4 col-md-6">
+                    <div class="prod-single text-center">
+                        <div class="prod-img">
+                            <img src="assets/img/product-2.jpg" class="img-fluid" alt="" />
+                            <div class="prod-info">
+                                <h4>Amexso Black</h4>
+                                <h5>$220.00</h5>
+                                <a href="#">Order Now <i class="icofont-long-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end product single-->
+                <!--start product single-->
+                <div class="col-lg-4 col-md-6">
+                    <div class="prod-single text-center">
+                        <div class="prod-img">
+                            <img src="assets/img/product-3.jpg" class="img-fluid" alt="" />
+                            <div class="prod-info">
+                                <h4>Latexo Green</h4>
+                                <h5>$350.00</h5>
+                                <a href="#">Order Now <i class="icofont-long-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end product single-->
+                <!--start product single-->
+                <div class="col-lg-4 col-md-6">
+                    <div class="prod-single text-center">
+                        <div class="prod-img">
+                            <img src="assets/img/product-4.jpg" class="img-fluid" alt="" />
+                            <div class="prod-info">
+                                <h4>Alimax Pink</h4>
+                                <h5>$299.00</h5>
+                                <a href="#">Order Now <i class="icofont-long-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end product single-->
+                <!--start product single-->
+                <div class="col-lg-4 col-md-6">
+                    <div class="prod-single text-center">
+                        <div class="prod-img">
+                            <img src="assets/img/product-3.jpg" class="img-fluid" alt="" />
+                            <div class="prod-info">
+                                <h4>Glasgox Green</h4>
+                                <h5>$199.00</h5>
+                                <a href="#">Order Now <i class="icofont-long-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end product single-->
+                <!--start product single-->
+                <div class="col-lg-4 col-md-6">
+                    <div class="prod-single text-center">
+                        <div class="prod-img">
+                            <img src="assets/img/product-1.jpg" class="img-fluid" alt="" />
+                            <div class="prod-info">
+                                <h4>Amelia Blue</h4>
+                                <h5>$250.00</h5>
+                                <a href="#">Order Now <i class="icofont-long-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end product single-->
             </div>
-         </div>
-      </div>
-   </section>
-   <!-- ***** Advance Cards End ***** -->
-
-   <!-- ***** Apps & Pages ***** -->
-   <section class="bg-white p-150" id="pages">
-      <div class="special_description_area">
-         <div class="container-fluid">
+        </div>
+    </section>
+    <!--end product area-->
+    <!--start newsletter area-->
+    <section id="newsletter-area" class="bg">
+        <div class="container">
             <div class="row">
-               <div class="col-lg-12 text-center mb-5">
-                  <div class="section-heading">
-                     <h2>Pages</h2>
-                  </div>
-                  <p>
-                     Materialize - Material Design Admin Template 100+ html pages. It contains all the commonly used
-                     pages
-                     to <br />
-                     develop any Applications which will ease the developer efforts.
-                  </p>
-               </div>
-               <div class="col-lg-4 col-md-6 col-12 mt-5 text-center image-hover wow fadeInDown">
-                  <a href="https://pixinvent.com/materialize-material-design-admin-template/html/ltr/vertical-modern-menu-template/page-blog-list.html"
-                     target="_blank"><img class="border-grey" src="img/scr-img/page-blog.jpg" alt="Apps Image" /></a>
-                  <h5 class="mt-4 mb-0">Blog</h5>
-                  <div class="btn-group mt-2" role="group" aria-label="Basic example"></div>
-               </div>
-               <div class="col-lg-4 col-md-6 col-12 mt-5 text-center image-hover wow fadeInDown">
-                  <a href="https://pixinvent.com/materialize-material-design-admin-template/html/ltr/vertical-modern-menu-template/page-search.html"
-                     target="_blank"><img class="border-grey" src="img/scr-img/page-search.jpg" alt="Apps Image" /></a>
-                  <h5 class="mt-4 mb-0">Search</h5>
-                  <div class="btn-group mt-2" role="group" aria-label="Basic example"></div>
-               </div>
-               <div class="col-lg-4 col-md-6 col-12 mt-5 text-center image-hover wow fadeInDown">
-                  <a href="https://pixinvent.com/materialize-material-design-admin-template/html/ltr/vertical-modern-menu-template/page-knowledge.html"
-                     target="_blank"><img class="border-grey" src="img/scr-img/page-knowledge.jpg"
-                        alt="Apps Image" /></a>
-                  <h5 class="mt-4 mb-0">Knowledge</h5>
-                  <div class="btn-group mt-2" role="group" aria-label="Basic example"></div>
-               </div>
-               <div class="col-lg-4 col-md-6 col-12 mt-5 text-center image-hover wow fadeInDown">
-                  <a href="https://pixinvent.com/materialize-material-design-admin-template/html/ltr/vertical-modern-menu-template/page-faq.html"
-                     target="_blank"><img class="border-grey" src="img/scr-img/page-faq.jpg" alt="Apps Image" /></a>
-                  <h5 class="mt-4 mb-0">FAQs</h5>
-                  <div class="btn-group mt-2" role="group" aria-label="Basic example"></div>
-               </div>
-               <div class="col-lg-4 col-md-6 col-12 mt-5 text-center image-hover wow fadeInDown">
-                  <a href="https://pixinvent.com/materialize-material-design-admin-template/html/ltr/vertical-modern-menu-template/user-profile-page.html"
-                     target="_blank"><img class="border-grey" src="img/scr-img/page-userprofile.jpg"
-                        alt="Apps Image" /></a>
-                  <h5 class="mt-4 mb-0">User Profile</h5>
-                  <div class="btn-group mt-2" role="group" aria-label="Basic example"></div>
-               </div>
-               <div class="col-lg-4 col-md-6 col-12 mt-5 text-center image-hover wow fadeInDown">
-                  <a href="https://pixinvent.com/materialize-material-design-admin-template/html/ltr/vertical-modern-menu-template/page-contact.html"
-                     target="_blank"><img class="border-grey" src="img/scr-img/page-contact.jpg" alt="Apps Image" /></a>
-                  <h5 class="mt-4 mb-0">Contact</h5>
-                  <div class="btn-group mt-2" role="group" aria-label="Basic example"></div>
-               </div>
-               <div class="col-lg-4 col-md-6 col-12 mt-5 text-center image-hover wow fadeInDown">
-                  <a href="https://pixinvent.com/materialize-material-design-admin-template/html/ltr/vertical-modern-menu-template/user-login.html"
-                     target="_blank"><img class="border-grey" src="img/scr-img/page-login.jpg" alt="Apps Image" /></a>
-                  <h5 class="mt-4 mb-0">Login</h5>
-                  <div class="btn-group mt-2" role="group" aria-label="Basic example"></div>
-               </div>
-               <div class="col-lg-4 col-md-6 col-12 mt-5 text-center image-hover wow fadeInDown">
-                  <a href="https://pixinvent.com/materialize-material-design-admin-template/html/ltr/vertical-modern-menu-template/page-404.html"
-                     target="_blank"><img class="border-grey" src="img/scr-img/page-404.jpg" alt="Apps Image" /></a>
-                  <h5 class="mt-4 mb-0">404</h5>
-                  <div class="btn-group mt-2" role="group" aria-label="Basic example"></div>
-               </div>
-               <div class="col-lg-4 col-md-6 col-12 mt-5 text-center image-hover wow fadeInDown">
-                  <a><img class="border-grey" src="img/scr-img/page-more.jpg" alt="Apps Image" /></a>
-                  <h5 class="mt-4 mb-0">And More</h5>
-                  <div class="btn-group mt-2" role="group" aria-label="Basic example"></div>
-               </div>
+                <!--start newsletter content-->
+                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+                    <div class="newsletter-box">
+                        <div class="heading text-center">
+                            <h5 class="text-light">Get Up To Date</h5>
+                            <h2 class="text-white">Subscribe our newsletter</h2>
+                            <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic
+                                explicabo voluptas nisi iste reiciendis, tempore commodi necessitatibus, laborum
+                                laudantium in.</p>
+                        </div>
+                        <!--start newsletter form-->
+                        <div class="newsletter-form">
+                            <form action="#" method="post">
+                                <input type="email" class="form-control" id="news-email" placeholder="Enter your email">
+                                <button type="submit">Subscribe Now</button>
+                            </form>
+                        </div>
+                        <!--end newsletter form-->
+                    </div>
+                </div>
+                <!--end newsletter content-->
             </div>
-         </div>
-      </div>
-   </section>
-   <!-- ***** Apps & Pages End ***** -->
-
-   <!-- ***** Build Process ***** -->
-   <section class="cool-facts-area p-150" id="build-process">
-      <div class="section-heading-white text-center">
-         <img src="img/scr-img/gitlab-icon.png" class="git-bg" alt="GitLab" />
-         <h4 class="text-white mt-2">Gitlab</h4>
-         <p class="text-white mt-4">
-            You can join RecycleML Gitlab repository to access the latest changes, <br />bug fixes and features
-            without having to wait for a new ThemeForest release.
-         </p>
-         <a class="btn submit-btn mt-3 px-4" href="https://pixinvent.com/gitlab-access-provider-for-envato/" target="_blank"><span>Join
-               RecycleML on Gitlab</span></a>
-      </div>
-   </section>
-   <!-- ***** Build Process End ***** -->
-
-   <!-- ***** Components ***** -->
-   <section class="bg-white p-150 pb-150" id="components">
-      <div class="container-fluid">
-         <div class="row text-center">
-            <div class="col-12 mb-b">
-               <!-- Heading Text -->
-               <div class="section-heading">
-                  <h2>Components</h2>
-               </div>
-               <p class="mb-5">
-                  A huge collection of components to power your <br />application with the latest UI/UX trends
-               </p>
+        </div>
+    </section>
+    <!--end newsletter area-->
+    <!--start faq area-->
+    <section id="faq-area" class="default" data-scroll-index="3">
+        <div class="container">
+            <div class="row">
+                <!--start heading-->
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="heading text-center">
+                        <h5>FAQ</h5>
+                        <h2>Frequently asked questions</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic explicabo voluptas nisi iste
+                            reiciendis, tempore commodi necessitatibus, laborum laudantium.</p>
+                    </div>
+                </div>
+                <!--end heading-->
             </div>
-            <div class="col-lg-2 col-md-4 col-6 mt-40 icon-hover">
-               <div class="h1 ti-alert" aria-hidden="true"></div>
-               <p>Alerts</p>
+            <div class="row">
+                <div class="col-lg-7 col-md-6">
+                    <div id="accordion" role="tablist">
+                        <!--start faq single-->
+                        <div class="card default">
+                            <div class="card-header active" role="tab" id="faq1">
+                                <h5 class="mb-0">
+                                    <a data-toggle="collapse" href="#collapse1" aria-expanded="true"
+                                        aria-controls="collapse1">How can I buy the watch?</a>
+                                </h5>
+                            </div>
+                            <div id="collapse1" class="collapse show" role="tabpanel" aria-labelledby="faq1"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit.
+                                    Pellentesque aliquet nibh nec urna. In nisi nequesi.
+                                </div>
+                            </div>
+                        </div>
+                        <!--end faq single-->
+                        <!--start faq single-->
+                        <div class="card default">
+                            <div class="card-header" role="tab" id="faq2">
+                                <h5 class="mb-0">
+                                    <a class="collapsed" data-toggle="collapse" href="#collapse2" aria-expanded="false"
+                                        aria-controls="collapse2">How can I order the watch?</a>
+                                </h5>
+                            </div>
+                            <div id="collapse2" class="collapse" role="tabpanel" aria-labelledby="faq2"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit.
+                                    Pellentesque aliquet nibh nec urna. In nisi nequesi.
+                                </div>
+                            </div>
+                        </div>
+                        <!--end faq single-->
+                        <!--start faq single-->
+                        <div class="card default">
+                            <div class="card-header" role="tab" id="faq3">
+                                <h5 class="mb-0">
+                                    <a class="collapsed" data-toggle="collapse" href="#collapse3" aria-expanded="false"
+                                        aria-controls="collapse3">How much price of the watch?</a>
+                                </h5>
+                            </div>
+                            <div id="collapse3" class="collapse" role="tabpanel" aria-labelledby="faq3"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit.
+                                    Pellentesque aliquet nibh nec urna. In nisi nequesi.
+                                </div>
+                            </div>
+                        </div>
+                        <!--end faq single-->
+                        <!--start faq single-->
+                        <div class="card default">
+                            <div class="card-header" role="tab" id="faq4">
+                                <h5 class="mb-0">
+                                    <a class="collapsed" data-toggle="collapse" href="#collapse4" aria-expanded="false"
+                                        aria-controls="collapse4">How can I get refund?</a>
+                                </h5>
+                            </div>
+                            <div id="collapse4" class="collapse" role="tabpanel" aria-labelledby="faq4"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit.
+                                    Pellentesque aliquet nibh nec urna. In nisi nequesi.
+                                </div>
+                            </div>
+                        </div>
+                        <!--end faq single-->
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6">
+                    <div class="faq-img">
+                        <img src="assets/img/watch-img-3.jpg" class="img-fluid" alt="" />
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-2 col-md-4 col-6 mt-40 icon-hover">
-               <div class="h1 ti-alarm-clock" aria-hidden="true"></div>
-               <p>Date Time Picker</p>
+        </div>
+    </section>
+    <!--end faq area-->
+    <!--start testimonial area-->
+    <section id="testi-area" class="bg-gray" data-scroll-index="4">
+        <div class="container">
+            <div class="row">
+                <!--start heading-->
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="heading text-center">
+                        <h5>Customer Feedback</h5>
+                        <h2>Our Clients valuable reviews about our products and service</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic explicabo voluptas nisi iste
+                            reiciendis, tempore commodi necessitatibus, laborum laudantium.</p>
+                    </div>
+                </div>
+                <!--end heading-->
             </div>
-            <div class="col-lg-2 col-md-4 col-6 mt-40 icon-hover">
-               <div class="h1 ti-comment" aria-hidden="true"></div>
-               <p>Toolbar</p>
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+                    <div class="testi-carousel owl-carousel">
+                        <!--start testimonial single-->
+                        <div class="testi-single text-center">
+                            <div class="client-img">
+                                <img src="assets/img/client-1.jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="client-comnt">
+                                <h5>Laboriosam libero, aliquam magnam debitis exercitationem doloribus quo repellat
+                                    aperiam doloremque aut, optio ab modi, itaque maiores labore.</h5>
+                                <span><i class="icofont-star"></i><i class="icofont-star"></i><i
+                                        class="icofont-star"></i><i class="icofont-star"></i><i
+                                        class="icofont-star"></i></span>
+                            </div>
+                            <div class="client-details">
+                                <h4>- Adam Smith</h4>
+                                <p>product marketer</p>
+                            </div>
+                        </div>
+                        <!--end testimonial single-->
+                        <!--start testimonial single-->
+                        <div class="testi-single text-center">
+                            <div class="client-img">
+                                <img src="assets/img/client-2.jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="client-comnt">
+                                <h5>Praesent dapibus, neque id cursus faucibus, tortor neque egestas auguae, eu
+                                    vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis.
+                                </h5>
+                                <span><i class="icofont-star"></i><i class="icofont-star"></i><i
+                                        class="icofont-star"></i><i class="icofont-star"></i><i
+                                        class="icofont-star"></i></span>
+                            </div>
+                            <div class="client-details">
+                                <h4>- Shane Kyle</h4>
+                                <p>affiliate marketer</p>
+                            </div>
+                        </div>
+                        <!--end testimonial single-->
+                        <!--start testimonial single-->
+                        <div class="testi-single text-center">
+                            <div class="client-img">
+                                <img src="assets/img/client-3.jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="client-comnt">
+                                <h5>Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Nam
+                                    nulla quam, gravida non, commodo a, sodales sit amet, nisi, itaque maiores labore.
+                                </h5>
+                                <span><i class="icofont-star"></i><i class="icofont-star"></i><i
+                                        class="icofont-star"></i><i class="icofont-star"></i><i
+                                        class="icofont-star"></i></span>
+                            </div>
+                            <div class="client-details">
+                                <h4>- Micheal Jonson</h4>
+                                <p>product manager</p>
+                            </div>
+                        </div>
+                        <!--end testimonial single-->
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-2 col-md-4 col-6 mt-40 icon-hover">
-               <div class="h1 ti-bolt" aria-hidden="true"></div>
-               <p>Icons</p>
+        </div>
+    </section>
+    <!--end testimonial area-->
+    <!--start contact area-->
+    <section id="contact-area" data-scroll-index="5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="heading">
+                        <h5>Need Help</h5>
+                        <h2>Contact with us</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic explicabo voluptas nisi iste
+                            reiciendis, tempore commodi necessitatibus, laborum laudantium in.</p>
+                    </div>
+                    <div class="contact-info">
+                        <h5>Address:</h5>
+                        <p>Maount View, Oval Road <br> New York, USA</p>
+                    </div>
+                    <div class="contact-info">
+                        <h5>Email:</h5>
+                        <p>support@email.com <br> example@support.com</p>
+                    </div>
+                    <div class="contact-info">
+                        <h5>Phone:</h5>
+                        <p>+91 12345 67890<br> +93 12345 67890</p>
+                    </div>
+                </div>
+                <!--start contact form-->
+                <div class="col-md-7">
+                    <div class="contact-form">
+                        <h3>Leave Us A Message</h3>
+                        <form id="ajax-contact" action="http://omexer.com/tm/RecycleML/demo/contact.php" method="post">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Name*"
+                                    required="required" data-error="name is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email address</label>
+                                <input type="email" class="form-control" id="email" name="email"
+                                    placeholder="Enter email*" required="required"
+                                    data-error="valid email is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea class="form-control" id="message" name="message" rows="8"
+                                    placeholder="Write your message*" required="required"
+                                    data-error="Please, leave us a message."></textarea>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <button type="submit">Submit</button>
+                            <div class="messages"></div>
+                        </form>
+                    </div>
+                </div>
+                <!--end contact form-->
             </div>
-            <div class="col-lg-2 col-md-4 col-6 mt-40 icon-hover">
-               <div class="h1 ti-text" aria-hidden="true"></div>
-               <p>Typography</p>
+        </div>
+    </section>
+    <!--end contact area-->
+    <!--start footer-->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <!--start footer content-->
+                <div class="col-lg-12">
+                    <div class="footer-cont text-center">
+                        <img src="assets/img/logo.png" class="img-fluid" alt="" />
+                        <h4>Follow Us</h4>
+                        <ul>
+                            <li><a href="#"><i class="icofont-facebook"></i></a></li>
+                            <li><a href="#"><i class="icofont-twitter"></i></a></li>
+                            <li><a href="#"><i class="icofont-google-plus"></i></a></li>
+                        </ul>
+                        <p>&copy; Copyright 2019. All Rights Reserved By <a target="_blank"
+                                href="https://omexer.com/">omexer.com</a></p>
+                    </div>
+                </div>
+                <!--end footer content-->
             </div>
-            <div class="col-lg-2 col-md-4 col-6 mt-40 icon-hover">
-               <div class="h1 ti-link" aria-hidden="true"></div>
-               <p>Buttons</p>
-            </div>
-            <div class="col-lg-2 col-md-4 col-6 mt-40 icon-hover">
-               <div class="h1 ti-angle-down" aria-hidden="true"></div>
-               <p>Dropdowns</p>
-            </div>
-            <div class="col-lg-2 col-md-4 col-6 mt-40 icon-hover">
-               <div class="h1 ti-layout" aria-hidden="true"></div>
-               <p>Modals</p>
-            </div>
-            <div class="col-lg-2 col-md-4 col-6 mt-40 icon-hover">
-               <div class="h1 ti-pin-alt" aria-hidden="true"></div>
-               <p>Tabs & Pills</p>
-            </div>
-            <div class="col-lg-2 col-md-4 col-6 mt-40 icon-hover">
-               <div class="h1 ti-medall-alt" aria-hidden="true"></div>
-               <p>Badges</p>
-            </div>
-            <div class="col-lg-2 col-md-4 col-6 mt-40 icon-hover">
-               <div class="h1 ti-more-alt" aria-hidden="true"></div>
-               <p>Progress</p>
-            </div>
-            <div class="col-lg-2 col-md-4 col-6 mt-40 icon-hover">
-               <div class="h1 ti-image" aria-hidden="true"></div>
-               <p>Media</p>
-            </div>
-            <div class="col-lg-2 col-md-4 col-6 mt-40 icon-hover">
-               <div class="h1 ti-layout-column3" aria-hidden="true"></div>
-               <p>Tables</p>
-            </div>
-            <div class="col-lg-2 col-md-4 col-6 mt-40 icon-hover">
-               <div class="h1 ti-layout-cta-left" aria-hidden="true"></div>
-               <p>Wizard</p>
-            </div>
-            <div class="col-lg-2 col-md-4 col-6 mt-40 icon-hover">
-               <div class="h1 ti-layout-grid2" aria-hidden="true"></div>
-               <p>Data Tables</p>
-            </div>
-            <div class="col-lg-2 col-md-4 col-6 mt-40 icon-hover">
-               <div class="h1 ti-calendar" aria-hidden="true"></div>
-               <p>Calendars</p>
-            </div>
-            <div class="col-lg-2 col-md-4 col-6 mt-40 icon-hover">
-               <div class="h1 ti-bar-chart" aria-hidden="true"></div>
-               <p>Charts</p>
-            </div>
-            <div class="col-lg-2 col-md-4 col-6 mt-40 icon-hover">
-               <div class="h1 ti-map" aria-hidden="true"></div>
-               <p>Maps</p>
-            </div>
-         </div>
-      </div>
-   </section>
-   <!-- ***** Components End ***** -->
-
-   <!-- ***** Awesome Features Start ***** -->
-   <section class="awesome-feature-area bg-grey section_padding_0_50 p-150 clearfix" id="features">
-      <div class="container-fluid">
-         <div class="row">
-            <div class="col-12 text-center">
-               <div class="section-heading">
-                  <h2>Endless features</h2>
-               </div>
-               <p class="mt-4">
-                  Based on MaterializeCSS latest version, Gulp task <br />runner, Unique Menu styles, Useful admin
-                  panels
-                  and applications
-               </p>
-            </div>
-         </div>
-         <div class="row bg-white mt-5 border-radius-15 shadow-1 pt-4 pb-4">
-            <div class="col-12 col-sm-12 col-lg-4 p-0">
-               <div class="single-feature px-4 pt-4">
-                  <div class="row">
-                     <div class="col-md-3 col-sm-12 text-right text-gradient">
-                        <span class="ti-view-grid text-medium"></span>
-                     </div>
-                     <div class="col-md-9 col-sm-12">
-                        <h5>Based on Materializecss</h5>
-                        <p class="text-sm">
-                           Google Material Design Inspired UI with gradient colors, responsive design and amazing
-                           support
-                           are the reasons our customers have fallen in love.
-                        </p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="col-12 col-sm-12 col-lg-4 p-0">
-               <div class="single-feature px-4 pt-4">
-                  <div class="row">
-                     <div class="col-md-3 col-sm-12 text-right text-gradient">
-                        <span class="ti-menu text-medium"></span>
-                     </div>
-                     <div class="col-md-9 col-sm-12">
-                        <h5>5 Different Menu Types</h5>
-                        <p class="text-sm">
-                           RecycleML template provide 5 different menu types. Vertical Modern Menu, Nav Dark
-                           Menu,
-                           Dark Menu, & Horizontal Menu
-                        </p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="col-12 col-sm-12 col-lg-4 p-0">
-               <div class="single-feature px-4 pt-4">
-                  <div class="row">
-                     <div class="col-md-3 col-sm-12 text-right text-gradient">
-                        <span class="ti-layout text-medium"></span>
-                     </div>
-                     <div class="col-md-9 col-sm-12">
-                        <h5>Layouts Options</h5>
-                        <p class="text-sm">
-                           RecycleML template include 3 layouts options, Dark, Light & Semi-dark Layouts. Choose
-                           your own layout based on your preference.
-                        </p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="col-12 col-sm-12 col-lg-4 p-0">
-               <div class="single-feature px-4 pt-4">
-                  <div class="row">
-                     <div class="col-md-3 col-sm-12 text-right text-gradient">
-                        <span class="ti-layers text-medium"></span>
-                     </div>
-                     <div class="col-md-9 col-sm-12">
-                        <h5>New Card & Dashboard</h5>
-                        <p class="text-sm">
-                           In last update, RecycleML include new eCommerce dashboard & also include new cards
-                           for
-                           eCommerce, analytics, social & gradient cards.
-                        </p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="col-12 col-sm-12 col-lg-4 p-0">
-               <div class="single-feature px-4 pt-4">
-                  <div class="row">
-                     <div class="col-md-3 col-sm-12 text-right text-gradient">
-                        <span class="ti-settings text-medium"></span>
-                     </div>
-                     <div class="col-md-9 col-sm-12">
-                        <h5>Easy to Customize</h5>
-                        <p class="text-sm">
-                           RecycleML template provide well formatted & commented code to understand easily,
-                           Using
-                           Grunt with SCSS simplify your basic customization.
-                        </p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="col-12 col-sm-12 col-lg-4 p-0">
-               <div class="single-feature px-4 pt-4">
-                  <div class="row">
-                     <div class="col-md-3 col-sm-12 text-right text-gradient">
-                        <span class="ti-file text-medium"></span>
-                     </div>
-                     <div class="col-md-9 col-sm-12">
-                        <h5>Detailed Documentation</h5>
-                        <p class="text-sm">
-                           We have provided detailed documentation for our template that will help you to easily use,
-                           install and customize our template and save your time.
-                        </p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </section>
-   <!-- ***** Awesome Features End ***** -->
-
-   <!-- ***** FAQ ***** -->
-   <section class="app-screenshots-area bg-white section_padding_0_100 clearfix p-150" id="faq">
-      <div class="container-fluid">
-         <div class="row">
-            <div class="col-12 text-center">
-               <!-- Heading Text -->
-               <div class="section-heading">
-                  <h2>FAQ</h2>
-               </div>
-               <p class="mt-5">
-                  Got a question? We've got answers. If you have some other questions, see our
-                  <a href="https://pixinvent.ticksy.com/" target="_blank">support center.</a>
-               </p>
-            </div>
-         </div>
-         <div class="row mt-5">
-            <div class="accordion" id="accordionExample">
-               <div class="card border-radius-15 mb-2">
-                  <div class="card-header border-radius-15 border-radius-15" id="headingOne">
-                     <h5 class="mb-0">
-                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
-                           aria-expanded="true" aria-controls="collapseOne">
-                           Do you charge for each upgrade?
-                        </button>
-                     </h5>
-                  </div>
-                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                     data-parent="#accordionExample">
-                     <div class="card-body">
-                        <p class="text-sm">
-                           Not at all. Once you purchase a license, you'll receive all future releases for free.
-                        </p>
-                     </div>
-                  </div>
-               </div>
-               <div class="card border-radius-15 mb-2">
-                  <div class="card-header border-radius-15" id="headingTwo">
-                     <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                           data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                           Do I need to purchase a license for each website?
-                        </button>
-                     </h5>
-                  </div>
-                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                     <div class="card-body">
-                        <p class="text-sm">
-                           Yes, you need to have a separate license for each website. You might have to purchase
-                           extended
-                           license for your web application.
-                        </p>
-                     </div>
-                  </div>
-               </div>
-               <div class="card border-radius-15 mb-2">
-                  <div class="card-header border-radius-15" id="headingThree">
-                     <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                           data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                           What is regular license?
-                        </button>
-                     </h5>
-                  </div>
-                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                     data-parent="#accordionExample">
-                     <div class="card-body">
-                        <p class="text-sm">
-                           Regular license can be used for end products that do not charge users for access or
-                           service(access is free and there will be no monthly subscription fee). Single regular license
-                           can be used for single end product and end product can be used by you or your client. If you
-                           want to sell end product to multiple clients then you will need to purchase separate license
-                           for each client. The same rule applies if you want to use the same end product on multiple
-                           domains(unique setup). For more info on regular license you can check official description.
-                        </p>
-                     </div>
-                  </div>
-               </div>
-               <div class="card border-radius-15 mb-2">
-                  <div class="card-header border-radius-15" id="headingFour">
-                     <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                           data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                           What is extended license?
-                        </button>
-                     </h5>
-                  </div>
-                  <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-                     <div class="card-body">
-                        <p class="text-sm">
-                           Extended license can be used for end products(web service or SAAS) that charges users for
-                           access or service(e.g: monthly subscription fee). Single extended license can be used for
-                           single end product and end product can be used by you or your client. If you want to sell end
-                           product to multiple clients then you will need to purchase separate extended license for each
-                           client. The same rule applies if you want to use the same end product on multiple
-                           domains(unique setup). For more info on extended licenses you can check official description.
-                        </p>
-                     </div>
-                  </div>
-               </div>
-               <div class="card border-radius-15 mb-2">
-                  <div class="card-header border-radius-15" id="headingFive">
-                     <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                           data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                           Which license is applicable for SASS application?
-                        </button>
-                     </h5>
-                  </div>
-                  <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-                     <div class="card-body">
-                        <p class="text-sm">
-                           If you are charging your customer for using your SASS based application you must buy an
-                           Extended License for each end product. If you aren't charging your customer then purchase
-                           Regular License for each end product.
-                        </p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </section>
-   <!-- ***** FAQ *****====== -->
-
-   <!-- ***** Pricing Plane Area Start *****==== -->
-   <section class="pricing-plane-area p-50 clearfix bg-grey" id="pricing">
-      <div class="row m-0">
-         <div class="col-12 col-md-6 mt-2">
-            <div class="container-fluid text-center gradient-primary price-card">
-               <h4 class="text-white">Regular License</h4>
-               <hr class="hr-width" />
-               <h2 class="text-white">All of these for a Perfect Price</h2>
-               <h1 class="text-big text-white">Only $24 NOW</h1>
-               <a class="btn buynow-btn mt-3 p-2 pl-3 pr-3"
-                  href="https://1.envato.market/materialize_admin"
-                  target="_blank"><span>Purchase Now</span></a>
-            </div>
-         </div>
-         <div class="col-12 col-md-6 mt-2">
-            <div class="container-fluid text-center gradient-primary price-card">
-               <h4 class="text-white">Extended License</h4>
-               <hr class="hr-width" />
-               <h2 class="text-white">All of these for a Perfect Price</h2>
-               <h1 class="text-big text-white">Only $699 NOW</h1>
-               <a class="btn buynow-btn mt-3 p-2 pl-3 pr-3"
-                  href="https://1.envato.market/materialize_admin"
-                  target="_blank"><span>Purchase Now</span></a>
-            </div>
-         </div>
-      </div>
-   </section>
-   <!-- ***** Pricing Plane Area End ***** -->
-
-   <!-- ***** Footer Area Start ***** -->
-   <footer class="text-center pt-3 clearfix">
-      <!-- Foooter Text-->
-      <div class="copyright-text">
-         <p>
-            Copyright ©2019 Designed by <a href="https://pixinvent.com" target="_blank"
-               class="text-danger">Pixinvent</a>
-         </p>
-      </div>
-   </footer>
-   <!-- ***** Footer Area End ***** -->
-
-   <!-- ***** App Screenshots Area End *****====== -->
-   <script>
-      (function (i, s, o, g, r, a, m) {
-         i["GoogleAnalyticsObject"] = r;
-         (i[r] =
-            i[r] ||
-            function () {
-               (i[r].q = i[r].q || []).push(arguments);
-            }),
-            (i[r].l = 1 * new Date());
-         (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
-         a.async = 1;
-         a.src = g;
-         m.parentNode.insertBefore(a, m);
-      })(window, document, "script", "https://www.google-analytics.com/analytics.js", "ga");
-
-      ga("create", "UA-96096445-4", "auto");
-      ga("send", "pageview");
-   </script>
-
-   <!-- Start of Async Drift Code -->
-   <script>
-      !(function () {
-         var t;
-         if (((t = window.driftt = window.drift = window.driftt || []), !t.init))
-            return t.invoked
-               ? void (window.console && console.error && console.error("Drift snippet included twice."))
-               : ((t.invoked = !0),
-                  (t.methods = [
-                     "identify",
-                     "config",
-                     "track",
-                     "reset",
-                     "debug",
-                     "show",
-                     "ping",
-                     "page",
-                     "hide",
-                     "off",
-                     "on"
-                  ]),
-                  (t.factory = function (e) {
-                     return function () {
-                        var n;
-                        return (n = Array.prototype.slice.call(arguments)), n.unshift(e), t.push(n), t;
-                     };
-                  }),
-                  t.methods.forEach(function (e) {
-                     t[e] = t.factory(e);
-                  }),
-                  (t.load = function (t) {
-                     var e, n, o, i;
-                     (e = 3e5),
-                        (i = Math.ceil(new Date() / e) * e),
-                        (o = document.createElement("script")),
-                        (o.type = "text/javascript"),
-                        (o.async = !0),
-                        (o.crossorigin = "anonymous"),
-                        (o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js"),
-                        (n = document.getElementsByTagName("script")[0]),
-                        n.parentNode.insertBefore(o, n);
-                  }));
-      })();
-      drift.SNIPPET_VERSION = "0.3.1";
-      drift.load("6ashbsefxhx7");
-   </script>
-   <!-- End of Async Drift Code -->
-     <!-- Hotjar Tracking Code for http://pixinvent.com/ -->
-  <script>
-      (function(h,o,t,j,a,r){
-          h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-          h._hjSettings={hjid:1522567,hjsv:6};
-          a=o.getElementsByTagName('head')[0];
-          r=o.createElement('script');r.async=1;
-          r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-          a.appendChild(r);
-      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-  </script>
-   <!-- Go to www.addthis.com/dashboard to customize your tools -->
-   <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58d9fa1af7a79649"></script>
-
-   <!-- Jquery-2.2.4 JS -->
-   <script src="js/jquery-2.2.4.min.js"></script>
-   <!-- Headroom js -->
-   <script src="js/headroom.js"></script>
-   <!-- Popper js -->
-   <script src="js/popper.min.js"></script>
-   <!-- Bootstrap-4 Beta JS -->
-   <script src="js/bootstrap.min.js"></script>
-   <!-- All Plugins JS -->
-   <script src="js/plugins.min.js"></script>
-   <!-- Active JS -->
-   <script src="js/active.min.js"></script>
-
-   <!-- Headroom -->
-   <script>
-      $(document).ready(function () {
-         // Select all links with hashes
-         $('a[href*="#"]')
-            // Remove links that don't actually link to anything
-            .not('[href="#"]')
-            .not('[href="#0"]')
-            .click(function (event) {
-               // On-page links
-               if (
-                  location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") &&
-                  location.hostname == this.hostname
-               ) {
-                  // Figure out element to scroll to
-                  var target = $(this.hash);
-                  target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
-                  // Does a scroll target exist?
-                  if (target.length) {
-                     // Only prevent default if animation is actually gonna happen
-                     event.preventDefault();
-                     $("html, body").animate(
-                        {
-                           scrollTop: target.offset().top
-                        },
-                        1000,
-                        function () {
-                           // Callback after animation
-                           // Must change focus!
-                           var $target = $(target);
-                           $target.focus();
-                           if ($target.is(":focus")) {
-                              // Checking if the target was focused
-                              return false;
-                           } else {
-                              $target.attr("tabindex", "-1"); // Adding tabindex for elements not focusable
-                              $target.focus(); // Set focus again
-                           }
-                        }
-                     );
-                  }
-               }
-            });
-         // grab an element
-         var myElement = document.querySelector("header");
-         // construct an instance of Headroom, passing the element
-         var headroom = new Headroom(myElement);
-         // initialise
-         headroom.init();
-      });
-   </script>
-   <!-- End Headroom -->
+        </div>
+    </footer>
+    <!--end footer-->
+    <!--jQuery js-->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <!--proper js-->
+    <script src="assets/js/popper.min.js"></script>
+    <!--bootstrap js-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!--magnic popup js-->
+    <script src="assets/js/magnific-popup.min.js"></script>
+    <!--owl carousel js-->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!--scrollIt js-->
+    <script src="assets/js/scrollIt.min.js"></script>
+    <!--contact js-->
+    <script src="assets/js/contact.js"></script>
+    <!--validator js-->
+    <script src="assets/js/validator.min.js"></script>
+    <!--main js-->
+    <script src="assets/js/custom.js"></script>
 </body>
+
+
+<!-- Mirrored from omexer.com/tm/RecycleML/demo/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 02 Nov 2019 20:21:21 GMT -->
 
 </html>
