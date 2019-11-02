@@ -9,7 +9,7 @@ else
     source venv/bin/activate
     echo $'\nCreated & Sourced Virtual Environment!\n'
 fi
-cd ~/HackPHS/recycleML 
+cd ~/RecycleML/recycleML 
 if [ -d "instance" ]; then
     echo $'\ndatabase is a-ok\n'
 else
