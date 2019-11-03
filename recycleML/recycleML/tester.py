@@ -48,4 +48,4 @@ def get_classification(image_name):
 
     return [mainPred.capitalize(), mainPerc, secPred.capitalize(), secPerc, thirdPred.capitalize(), thirdPerc, fourthPred.capitalize(), fourthPerc, fifthPred.capitalize(), fifthPerc, lastPred.capitalize(), lastPerc]
 
-print(get_classification('data/test/glass143.jpg'))
+print(get_classification('static/img/data/test/glass143.jpg'))
