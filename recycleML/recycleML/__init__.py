@@ -1,4 +1,6 @@
 import os
+import time
+
 from os.path import join, dirname, realpath
 #import magic
 
@@ -39,6 +41,7 @@ def handleFileUpload():
             path = dirname(realpath(__file__)) + os.path.join('/static/img/tmp/', x)
             photo.save(path)
             a = tester.get_classification(path)
+            # time.sleep(1)
             p1 = a[0]
             n1 = a[1]
             p2 = a[2]
