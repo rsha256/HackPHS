@@ -121,14 +121,10 @@
                 <!--start about content-->
                 <div class="col-md-6 align-middle justify-content-center align-self-center">
                     <div class="about-cont">
-                        <form class="col s12">
-                            <label class="file">
-                                <input type="file" id="file" aria-label="File browser example">
-                                <span class="file-custom"></span>
-                              </label>
-                              <br />
-                              <a href="/upload" class="white-text">Submit!</a>
-                                </form>
+                            <form action="/handleUpload" class="col s12" method="post" enctype="multipart/form-data">
+                                Choose the file: <input type="file" name="photo" /><br />
+                                <input class="sub" type="submit" value="Upload" />
+                            </form>
                             </div>
                 </div>
                 <!--end about content-->
@@ -144,16 +140,16 @@
                                         <ul class="green">
                                     <li id="oneG"><i class="icofont-check"></i> Confidence Levels: 
                                     <ul class="probs">
-                                        <li> <font size="1">{ p1 } probability of being { n1 }</font> </li>
-                                        <li> <font size="1">{ p2 } probability of being { n2 }</font> </li>
-                                        <li> <font size="1">{ p3 } probability of being { n3 }</font> </li>
-                                        <li> <font size="1">{ p4 } probability of being { n4 }</font> </li>
-                                        <li> <font size="1">{ p5 } probability of being { n5 }</font> </li>
-                                        <li> <font size="1">{ p6 } probability of being { n6 }</font> </li>
+                                        <li> <font size="1">99.99% probability of being Cardboard</font> </li>
+                                        <li> <font size="1">0% probability of being Trash</font> </li>
+                                        <li> <font size="1">0% probability of being Paper</font> </li>
+                                        <li> <font size="1">0% probability of being Plastic</font> </li>
+                                        <li> <font size="1">0% probability of being Glass</font> </li>
+                                        <li> <font size="1">0% probability of being Metal</font> </li>
                                     </ul>
                                     </li>
-                                    <li id="twoG"><i class="icofont-check"></i> This image is most likely { n1 }. </li>
-                                    <li id="threeG"><i class="icofont-check"></i> The second most likely waste category is { n2 } </li>
+                                    <li id="twoG"><i class="icofont-check"></i> This image is most likely Cardboard. </li>
+                                    <li id="threeG"><i class="icofont-check"></i> The second most likely waste category is Trash </li>
                                 </ul>
                             </div>
                 </div>
@@ -194,6 +190,34 @@
         <!--end video plyer-->
     </section>
     <!--end Feedback area-->
+    <!--start faq area-->
+    <section id="faq-area" class="default" data-scroll-index="3">
+        <div class="container">
+            <div class="row">
+                <!--start heading-->
+                <div class="col-lg-8 offset-lg-2">
+                        <div class="heading text-center">
+                                <h5>Data Visualization</h5>
+                                <p>Below is a representation of our model's improvement over 20 runs of the data.</p>
+                            </div>
+                </div>
+                <!--end heading-->
+            </div>
+            <div class="row">
+                <div class="col-lg-7 col-md-6">
+                    <div class="faq-img">
+                        <img src="../static/img/image_2019-11-03_09-53-43.png" class="img-fluid" alt="" />
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6">
+                    <div class="faq-img">
+                        <img src="../static/img/image_2019-11-03_09-53-48.png" class="img-fluid" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end faq area-->
     <!--start testimonial area-->
     <section id="testi-area" class="bg-gray" data-scroll-index="3">
             <br />

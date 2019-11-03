@@ -1,4 +1,6 @@
 import os
+import time
+
 from os.path import join, dirname, realpath
 #import magic
 

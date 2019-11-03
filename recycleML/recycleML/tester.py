@@ -7,7 +7,8 @@ import warnings
 warnings.filterwarnings("ignore")
 
 def get_classification(image_name):
-    path2 = Path(os.getcwd())/"static/img/data"
+    path2 = str(Path(os.getcwd()))+"/static/img/data"
+    print(path2)
     tfms = get_transforms(do_flip=True,flip_vert=True)
     data = ImageDataBunch.from_folder(path2, test="test", ds_tfms=tfms, bs=16)
     learn = create_cnn(data,models.resnet34,metrics=error_rate)
