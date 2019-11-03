@@ -121,14 +121,10 @@
                 <!--start about content-->
                 <div class="col-md-6 align-middle justify-content-center align-self-center">
                     <div class="about-cont">
-                        <form class="col s12">
-                            <label class="file">
-                                <input type="file" id="file" aria-label="File browser example">
-                                <span class="file-custom"></span>
-                              </label>
-                              <br />
-                              <a href="/upload" class="white-text">Submit!</a>
-                                </form>
+                            <form action="/handleUpload" class="col s12" method="post" enctype="multipart/form-data">
+                                Choose the file: <input type="file" name="photo" /><br />
+                                <input class="sub" type="submit" value="Upload" />
+                            </form>
                             </div>
                 </div>
                 <!--end about content-->
