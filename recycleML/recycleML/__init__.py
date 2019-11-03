@@ -1,4 +1,5 @@
 import os
+#import magic
 
 from flask import Flask, flash, request, redirect, url_for, render_template, send_from_directory
 from werkzeug.utils import secure_filename
@@ -10,6 +11,11 @@ ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg'}
 
 app = Flask(__name__)
 
+
+app.secret_key = "dev"
+app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
+
+
 # upload
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
@@ -17,7 +23,9 @@ def allowed_file(filename):
     return '.' in filename and \
            filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
-@app.route('/upload', methods=['GET', 'POST'])
+p = 0
+
+@app.route('/upload', methods=['POST'])
 def upload_file():
     if request.method == 'POST':
         # check if the post request has the file part
@@ -30,16 +38,19 @@ def upload_file():
         if file.filename == '':
             flash('No selected file')
             return redirect(request.url)
-        if file and allowed_file(file.filename):
+        print(file.filename)
+        if allowed_file(file.filename):
             now = datetime.now()
-            filename = now
             filename = secure_filename(file.filename)
+            global p
+            p = os.path.join(app.config['UPLOAD_FOLDER'], filename)
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
-            return redirect(url_for('uploaded_file',
-                                    filename=filename))
-    return render_template('index.html', image=send_from_directory(app.config['UPLOAD_FOLDER'],
-                               filename), title='Upload')
-
+            print("yee")
+            return render_template('index.html', image=send_from_directory(app.config['UPLOAD_FOLDER'],
+                               filename), filename=p, title='Upload')
+    print("yeet")
+    print(request.method)
+    return render_template('index.html', filename=p, title='Upload')
 
 @app.route('/')
 @app.route('/index.html')
