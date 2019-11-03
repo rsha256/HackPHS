@@ -40,6 +40,7 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -1081,7 +1082,7 @@ p {
 
 #testi-area {
     padding: 90px 0 180px;
-    background-image: url(../img/testi-bg.png);
+    /* background-image: url(../img/testi-bg.png); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover
@@ -1098,8 +1099,7 @@ p {
 }
 
 .testi-single img {
-    max-width: 80px;
-    border-radius: 50%;
+    border-radius: 10%;
     margin: 0 auto 30px;
 }
 
@@ -1287,6 +1287,14 @@ p {
 .footer-cont p a {
     color: #7c76f4;
     font-weight: 700
+}
+
+.hyperlink {
+    text-decoration: none;
+}
+
+.hyperlink:hover {
+    text-decoration: underline;
 }
 
 /*-------------------------------------------------------------------------------------

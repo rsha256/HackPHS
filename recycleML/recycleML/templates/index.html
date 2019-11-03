@@ -10,7 +10,7 @@
     <meta name="description" content="RecycleML — Responsive application which classifies waste to help you recycle without thinking.">
     <meta name="RecycleML"
         content="RecycleML — Responsive application which classifies waste to help you recycle without thinking." />
-    <title>RecycleML - Simple Waste Classification {{ title }}</title>
+    <title>RecycleML - {{ title }}</title>
     <!--favicon-->
     <link rel="shortcut icon" type="image/png" href="../static/img/favicon.png">
     <!--bootstrap css-->
@@ -48,7 +48,7 @@
             <nav class="navbar navbar-expand-md">
                 <div class="container">
                     <!--logo-->
-                    <a class="logo" href="#"><img   ic/img/logo.png" alt="logo" /></a>
+                    <a class="logo" href="#"><img src="../static/img/logo-cropped.png" alt="logo" /></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
                         aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="icon-bar"><i class="icofont-navigation-menu"></i></span>
@@ -58,12 +58,6 @@
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
                                 <a class="nav-link active" href="#" data-scroll-nav="0">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" data-scroll-nav="1">Features</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" data-scroll-nav="2">Product</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#" data-scroll-nav="3">Faq</a>
@@ -88,19 +82,25 @@
                 <!--start caption image-->
                 <div class="col-md-5">
                     <div class="caption-img">
-                        <img src="../static/img/watch-1.png" class="img-fluid" alt="" />
+                        <img src="../static/img/favicon.png" class="img-fluid" alt="" />
                     </div>
                 </div>
                 <!--end caption image-->
                 <!--start caption content-->
                 <div class="col-md-7">
                     <div class="caption">
-                        <h1 class="text-white">Best Landing Page For Product Showcase</h1>
-                        <p class="text-white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus
-                            hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id,
-                            mattis vel, nisi. Sed pretium ligula.</p>
+                        <h1 class="text-white">Simple Waste Classification</h1>
+                        <p class="text-white">You just finished enjoying your favorite chocalate bar. 
+                            However, now you have to trash the wrapper from your premiere commodity. 
+                            Already annoyed at the fact that you have finished your pleasurable snack, you now have 
+                            to walk up find a trash can and throw the wrapper into the garbadge. 
+                            For you, you are most likeliest to throw it into the nearest bin you can find. 
+                            You are statistically unlikely to ponder whether the paper wrapper should be placed in the recycling bin or the garbadge bin. 
+                            The blue color and nearby locality to another garbadge can help you realize you should recycle there; however, according to the 
+                            The American Recycling Center, a high majority of all recycled material is simply office paper.
+                            With an over 80% classification rate, we aim to elevate people's recycling habits!</p>
                         <div class="hero-btn">
-                            <a class="bg" href="#">Buy For $199</a><a href="#">More Info</a>
+                            <a class="bg" href="#about-area">Get Started!</a><a href="#">About Us</a>
                         </div>
                     </div>
                 </div>
@@ -111,6 +111,7 @@
     <!--end hero area-->
     <!--start about area-->
     <section id="about-area" class="default">
+        <br />
         <div class="container">
             <div class="row">
                 <!--start about content-->
@@ -142,87 +143,8 @@
         </div>
     </section>
     <!--end about area-->
-    <!--start core feature area-->
-    <section id="core-feat-area" class="bg-gray" data-scroll-index="1">
-        <div class="container">
-            <div class="row">
-                <!--start heading-->
-                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
-                    <div class="heading text-center">
-                        <h5>Core Features</h5>
-                        <h2>Our product has lots of excellent core features for smart people.</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic explicabo voluptas nisi iste
-                            reiciendis, tempore commodi necessitatibus, laborum laudantium.</p>
-                    </div>
-                </div>
-                <!--end heading-->
-            </div>
-            <div class="row">
-                <!--start core feature single-->
-                <div class="col-lg-4 col-md-6">
-                    <div class="core-feat-single text-center">
-                        <i class="icofont-globe"></i>
-                        <h4>GPRS Tracking</h4>
-                        <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.
-                            Aenean dignissim.</p>
-                    </div>
-                </div>
-                <!--end core feature single-->
-                <!--start core feature single-->
-                <div class="col-lg-4 col-md-6">
-                    <div class="core-feat-single text-center">
-                        <i class="icofont-alarm"></i>
-                        <h4>Notification Alart</h4>
-                        <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.
-                            Aenean dignissim.</p>
-                    </div>
-                </div>
-                <!--end core feature single-->
-                <!--start core feature single-->
-                <div class="col-lg-4 col-md-6">
-                    <div class="core-feat-single text-center">
-                        <i class="icofont-video"></i>
-                        <h4>Instant Video Call</h4>
-                        <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.
-                            Aenean dignissim.</p>
-                    </div>
-                </div>
-                <!--end core feature single-->
-                <!--start core feature single-->
-                <div class="col-lg-4 col-md-6">
-                    <div class="core-feat-single text-center">
-                        <i class="icofont-chat"></i>
-                        <h4>User Live Chat</h4>
-                        <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.
-                            Aenean dignissim.</p>
-                    </div>
-                </div>
-                <!--end core feature single-->
-                <!--start core feature single-->
-                <div class="col-lg-4 col-md-6">
-                    <div class="core-feat-single text-center">
-                        <i class="icofont-brand-android-robot"></i>
-                        <h4>Install Any App</h4>
-                        <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.
-                            Aenean dignissim.</p>
-                    </div>
-                </div>
-                <!--end core feature single-->
-                <!--start core feature single-->
-                <div class="col-lg-4 col-md-6">
-                    <div class="core-feat-single text-center">
-                        <i class="icofont-dart"></i>
-                        <h4>Attractive Design</h4>
-                        <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.
-                            Aenean dignissim.</p>
-                    </div>
-                </div>
-                <!--end core feature single-->
-            </div>
-        </div>
-    </section>
-    <!--end core feature area-->
     <!--start video area-->
+    <br />
     <section id="video-area">
         <div class="container">
             <div class="row">
@@ -256,6 +178,7 @@
     <!--end video area-->
     <!--start why choose area-->
     <section id="why-chose-area" class="bg-gray">
+            <br />
         <div class="container">
             <div class="row">
                 <!--start heading-->
@@ -319,6 +242,7 @@
     <!--end why choose area-->
     <!--start newsletter area-->
     <section id="newsletter-area" class="bg">
+            <br />
         <div class="container">
             <div class="row">
                 <!--start newsletter content-->
@@ -346,114 +270,17 @@
         </div>
     </section>
     <!--end newsletter area-->
-    <!--start faq area-->
-    <section id="faq-area" class="default" data-scroll-index="3">
-        <div class="container">
-            <div class="row">
-                <!--start heading-->
-                <div class="col-lg-8 offset-lg-2">
-                    <div class="heading text-center">
-                        <h5>FAQ</h5>
-                        <h2>Frequently asked questions</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic explicabo voluptas nisi iste
-                            reiciendis, tempore commodi necessitatibus, laborum laudantium.</p>
-                    </div>
-                </div>
-                <!--end heading-->
-            </div>
-            <div class="row">
-                <div class="col-lg-7 col-md-6">
-                    <div id="accordion" role="tablist">
-                        <!--start faq single-->
-                        <div class="card default">
-                            <div class="card-header active" role="tab" id="faq1">
-                                <h5 class="mb-0">
-                                    <a data-toggle="collapse" href="#collapse1" aria-expanded="true"
-                                        aria-controls="collapse1">How can I buy the watch?</a>
-                                </h5>
-                            </div>
-                            <div id="collapse1" class="collapse show" role="tabpanel" aria-labelledby="faq1"
-                                data-parent="#accordion">
-                                <div class="card-body">
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit.
-                                    Pellentesque aliquet nibh nec urna. In nisi nequesi.
-                                </div>
-                            </div>
-                        </div>
-                        <!--end faq single-->
-                        <!--start faq single-->
-                        <div class="card default">
-                            <div class="card-header" role="tab" id="faq2">
-                                <h5 class="mb-0">
-                                    <a class="collapsed" data-toggle="collapse" href="#collapse2" aria-expanded="false"
-                                        aria-controls="collapse2">How can I order the watch?</a>
-                                </h5>
-                            </div>
-                            <div id="collapse2" class="collapse" role="tabpanel" aria-labelledby="faq2"
-                                data-parent="#accordion">
-                                <div class="card-body">
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit.
-                                    Pellentesque aliquet nibh nec urna. In nisi nequesi.
-                                </div>
-                            </div>
-                        </div>
-                        <!--end faq single-->
-                        <!--start faq single-->
-                        <div class="card default">
-                            <div class="card-header" role="tab" id="faq3">
-                                <h5 class="mb-0">
-                                    <a class="collapsed" data-toggle="collapse" href="#collapse3" aria-expanded="false"
-                                        aria-controls="collapse3">How much price of the watch?</a>
-                                </h5>
-                            </div>
-                            <div id="collapse3" class="collapse" role="tabpanel" aria-labelledby="faq3"
-                                data-parent="#accordion">
-                                <div class="card-body">
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit.
-                                    Pellentesque aliquet nibh nec urna. In nisi nequesi.
-                                </div>
-                            </div>
-                        </div>
-                        <!--end faq single-->
-                        <!--start faq single-->
-                        <div class="card default">
-                            <div class="card-header" role="tab" id="faq4">
-                                <h5 class="mb-0">
-                                    <a class="collapsed" data-toggle="collapse" href="#collapse4" aria-expanded="false"
-                                        aria-controls="collapse4">How can I get refund?</a>
-                                </h5>
-                            </div>
-                            <div id="collapse4" class="collapse" role="tabpanel" aria-labelledby="faq4"
-                                data-parent="#accordion">
-                                <div class="card-body">
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit.
-                                    Pellentesque aliquet nibh nec urna. In nisi nequesi.
-                                </div>
-                            </div>
-                        </div>
-                        <!--end faq single-->
-                    </div>
-                </div>
-                <div class="col-lg-5 col-md-6">
-                    <div class="faq-img">
-                        <img src="../static/img/watch-img-3.jpg" class="img-fluid" alt="" />
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--end faq area-->
     <!--start testimonial area-->
     <section id="testi-area" class="bg-gray" data-scroll-index="4">
-        <div class="container">
+            <br />
+            <div class="container">
             <div class="row">
                 <!--start heading-->
                 <div class="col-lg-8 offset-lg-2">
                     <div class="heading text-center">
-                        <h5>Customer Feedback</h5>
-                        <h2>Our Clients valuable reviews about our products and service</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic explicabo voluptas nisi iste
-                            reiciendis, tempore commodi necessitatibus, laborum laudantium.</p>
+                        <h5>Demo Examples</h5>
+                        <h2>We have tested the following </h2>
+                        <p>Below, are some featured examples of how our application classified images.</p>
                     </div>
                 </div>
                 <!--end heading-->
@@ -464,17 +291,18 @@
                         <!--start testimonial single-->
                         <div class="testi-single text-center">
                             <div class="client-img">
-                                <img src="../static/img/client-1.jpg" class="img-fluid" alt="">
+                                <img src="../static/img/data/train/metal/metal7.jpg" class="img-fluid" alt="">
                             </div>
                             <div class="client-comnt">
-                                <h5>Laboriosam libero, aliquam magnam debitis exercitationem doloribus quo repellat
+                                <h5>Above is a metal can, from our Kagggle dataset, we tested our image 
+                                    classification script to see which compartment would  . Laboriosam libero, aliquam magnam debitis exercitationem doloribus quo repellat
                                     aperiam doloremque aut, optio ab modi, itaque maiores labore.</h5>
                                 <span><i class="icofont-star"></i><i class="icofont-star"></i><i
                                         class="icofont-star"></i><i class="icofont-star"></i><i
                                         class="icofont-star"></i></span>
                             </div>
                             <div class="client-details">
-                                <h4>- Adam Smith</h4>
+                                <h4>- Confidence: 97.44%</h4>
                                 <p>product marketer</p>
                             </div>
                         </div>
@@ -482,7 +310,7 @@
                         <!--start testimonial single-->
                         <div class="testi-single text-center">
                             <div class="client-img">
-                                <img src="../static/img/client-2.jpg" class="img-fluid" alt="">
+                                <img src="../static/img/data/train/glass/glass88.jpg" class="img-fluid" alt="">
                             </div>
                             <div class="client-comnt">
                                 <h5>Praesent dapibus, neque id cursus faucibus, tortor neque egestas auguae, eu
@@ -493,15 +321,72 @@
                                         class="icofont-star"></i></span>
                             </div>
                             <div class="client-details">
-                                <h4>- Shane Kyle</h4>
+                                <h4>- Confidence: 99.91%</h4>
                                 <p>affiliate marketer</p>
                             </div>
                         </div>
                         <!--end testimonial single-->
                         <!--start testimonial single-->
                         <div class="testi-single text-center">
+                                <div class="client-img">
+                                    <img src="../static/img/data/train/cardboard/cardboard200.jpg" class="img-fluid" alt="">
+                                </div>
+                                <div class="client-comnt">
+                                    <h5>Praesent dapibus, neque id cursus faucibus, tortor neque egestas auguae, eu
+                                        vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis.
+                                    </h5>
+                                    <span><i class="icofont-star"></i><i class="icofont-star"></i><i
+                                            class="icofont-star"></i><i class="icofont-star"></i><i
+                                            class="icofont-star"></i></span>
+                                </div>
+                                <div class="client-details">
+                                <h4>- Confidence: 99.92%</h4>
+                                    <p>affiliate marketer</p>
+                                </div>
+                            </div>
+                            <!--end testimonial single-->
+                            <!--start testimonial single-->
+                        <div class="testi-single text-center">
+                                <div class="client-img">
+                                    <img src="../static/img/data/train/paper/paper208.jpg" class="img-fluid" alt="">
+                                </div>
+                                <div class="client-comnt">
+                                    <h5>Praesent dapibus, neque id cursus faucibus, tortor neque egestas auguae, eu
+                                        vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis.
+                                    </h5>
+                                    <span><i class="icofont-star"></i><i class="icofont-star"></i><i
+                                            class="icofont-star"></i><i class="icofont-star"></i><i
+                                            class="icofont-star"></i></span>
+                                </div>
+                                <div class="client-details">
+                                <h4>- Confidence: 99.63%</h4>
+                                    <p>affiliate marketer</p>
+                                </div>
+                            </div>
+                            <!--end testimonial single-->
+                            <!--start testimonial single-->
+                        <div class="testi-single text-center">
+                                <div class="client-img">
+                                    <img src="../static/img/data/train/plastic/plastic151.jpg" class="img-fluid" alt="">
+                                </div>
+                                <div class="client-comnt">
+                                    <h5>Praesent dapibus, neque id cursus faucibus, tortor neque egestas auguae, eu
+                                        vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis.
+                                    </h5>
+                                    <span><i class="icofont-star"></i><i class="icofont-star"></i><i
+                                            class="icofont-star"></i><i class="icofont-star"></i><i
+                                            class="icofont-star"></i></span>
+                                </div>
+                                <div class="client-details">
+                                <h4>- Confidence: 93.08%</h4>
+                                    <p>affiliate marketer</p>
+                                </div>
+                            </div>
+                            <!--end testimonial single-->
+                        <!--start testimonial single-->
+                        <div class="testi-single text-center">
                             <div class="client-img">
-                                <img src="../static/img/client-3.jpg" class="img-fluid" alt="">
+                                <img src="../static/img/data/train/trash/trash114.jpg" class="img-fluid" alt="">
                             </div>
                             <div class="client-comnt">
                                 <h5>Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Nam
@@ -512,7 +397,7 @@
                                         class="icofont-star"></i></span>
                             </div>
                             <div class="client-details">
-                                <h4>- Micheal Jonson</h4>
+                                    <h4>- Confidence: 93.43%</h4>
                                 <p>product manager</p>
                             </div>
                         </div>
@@ -525,33 +410,32 @@
     <!--end testimonial area-->
     <!--start contact area-->
     <section id="contact-area" data-scroll-index="5">
-        <div class="container">
+            <br />
+            <div class="container">
             <div class="row">
                 <div class="col-md-5">
                     <div class="heading">
                         <h5>Need Help</h5>
-                        <h2>Contact with us</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic explicabo voluptas nisi iste
-                            reiciendis, tempore commodi necessitatibus, laborum laudantium in.</p>
+                        <h2>Contact us</h2>  
                     </div>
                     <div class="contact-info">
                         <h5>Address:</h5>
-                        <p>Maount View, Oval Road <br> New York, USA</p>
+                        <p>Princeton <br> New Jersey, USA</p>
                     </div>
                     <div class="contact-info">
                         <h5>Email:</h5>
-                        <p>support@email.com <br> example@support.com</p>
+                        <p>support@recycleml.com</p>
                     </div>
-                    <div class="contact-info">
+                    <!-- <div class="contact-info">
                         <h5>Phone:</h5>
                         <p>+91 12345 67890<br> +93 12345 67890</p>
-                    </div>
+                    </div> -->
                 </div>
                 <!--start contact form-->
                 <div class="col-md-7">
                     <div class="contact-form">
                         <h3>Leave Us A Message</h3>
-                        <form id="ajax-contact" action="http://omexer.com/tm/RecycleML/demo/contact.php" method="post">
+                        <form id="ajax-contact" action="" method="post">
                             <div class="form-group">
                                 <label for="name">Name</label>
                                 <input type="text" class="form-control" id="name" name="name" placeholder="Name*"
@@ -596,8 +480,8 @@
                             <li><a href="#"><i class="icofont-twitter"></i></a></li>
                             <li><a href="#"><i class="icofont-google-plus"></i></a></li>
                         </ul>
-                        <p>&copy; Copyright 2019. All Rights Reserved By <a target="_blank"
-                                href="https://omexer.com/">omexer.com</a></p>
+                        <p>&copy; Copyright 2019. All Rights Reserved By <a class="hyperlink" target="_blank"
+                                href="https://rshah.tech/">RecycleML</a></p>
                     </div>
                 </div>
                 <!--end footer content-->
@@ -624,8 +508,4 @@
     <!--main js-->
     <script src="../static/js/custom.js"></script>
 </body>
-
-
-<!-- Mirrored from omexer.com/tm/RecycleML/demo/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 02 Nov 2019 20:21:21 GMT -->
-
 </html>
