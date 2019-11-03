@@ -649,13 +649,24 @@ input {
     margin: 0 0 20px;
 }
 
-.video-player-wrap {
+.video-player-wrap1 {
     position: absolute;
     left: 0;
     top: 0;
     width: 50%;
-    height: 100%;
-    background-image: url(../img/example.jpg);
+    height: 25%;
+    background-image: url(../img/image_2019-11-03_09-53-43.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center
+}
+.video-player-wrap2 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 25%;
+    background-image: url(../img/image_2019-11-03_09-53-48.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center

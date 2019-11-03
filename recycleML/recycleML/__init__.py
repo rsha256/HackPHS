@@ -26,7 +26,7 @@ def allowed_file(filename):
     return '.' in filename and \
            filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
-@app.route("/handleUpload", methods=['POST'])
+@app.route("/handleUpload", methods=['GET', 'POST'])
 def handleFileUpload():
     if 'photo' in request.files:
         photo = request.files['photo']
@@ -38,7 +38,7 @@ def handleFileUpload():
             x = x + '.jpg'
             path = dirname(realpath(__file__)) + os.path.join('/static/img/tmp/', x)
             photo.save(path)
-            a = tester.get_classification(path)
+            a = yield tester.get_classification(path) 
             p1 = a[0]
             n1 = a[1]
             p2 = a[2]
