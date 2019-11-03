@@ -58,4 +58,4 @@ def get_classification(image_name):
 
     return [mainPred.capitalize(), mainPerc, secPred.capitalize(), secPerc, thirdPred.capitalize(), thirdPerc, fourthPred.capitalize(), fourthPerc, fifthPred.capitalize(), fifthPerc, lastPred.capitalize(), lastPerc]
 
-# print(get_classification('static/img/data/test/paper84.jpg'))
+# print(get_classification('/Users/varun/RecycleML/recycleML/recycleML/static/img/data/train/cardboard/cardboard200.jpg'))
