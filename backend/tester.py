@@ -18,15 +18,34 @@ def get_classification(image_name):
     for i in prediction[2]:
         a.append(i.item())
 
-    print(str(prediction[0]))
-    print(str((max(a))*100)[:5]+"%")
+    mainPred = str(prediction[0])
+    mainPerc = str((max(a))*100)[:5]+"%"
 
     new = list(a)
     new.remove(max(a))
 
     classifications = ['cardboard', 'glass', 'metal', 'paper', 'plastic', 'trash']
-    print(classifications[a.index(max(new))])
-    print(str(max(new)*100)[:5]+"%")
-    print(open_image(image_name))
+    secPred = classifications[a.index(max(new))]
+    secPerc = str(max(new)*100)[:5]+"%"
+    new.remove(max(new))
 
-get_classification('plastic100.jpg')
+    thirdPred = classifications[a.index(max(new))]
+    thirdPerc = str(max(new)*100)[:5]+"%"
+    new.remove(max(new))
+
+    fourthPred = classifications[a.index(max(new))]
+    fourthPerc = str(max(new)*100)[:5]+"%"
+    new.remove(max(new))
+
+    fifthPred = classifications[a.index(max(new))]
+    fifthPerc = str(max(new)*100)[:5]+"%"
+    new.remove(max(new))
+
+    lastPred = classifications[a.index(max(new))]
+    lastPerc = str(max(new)*100)[:5]+"%"
+    new.remove(max(new))
+    #open_image(image_name) <---- ORIGINAL IMAGE THAT WAS SENT IN
+
+    return [mainPred.capitalize(), mainPerc, secPred.capitalize(), secPerc, thirdPred.capitalize(), thirdPerc, fourthPred.capitalize(), fourthPerc, fifthPred.capitalize(), fifthPerc, lastPred.capitalize(), lastPerc]
+
+print(get_classification('data/test/glass143.jpg'))
