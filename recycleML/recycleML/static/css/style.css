@@ -453,8 +453,37 @@ p {
     line-height: 26px;
 }
 
-.about-cont li i {
+.probs {
+    font-size: 12px;
+    margin-top: 0;
+}
+
+.green {
+    display: none;
+}
+
+.green li i {
     color: #2ecc71;
+}
+
+.red li i {
+    color: #F00;
+}
+
+.white-text {
+    color: white;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input {
+  margin: 0;
+  font: 1rem/1.5 "PT Sans", Arial, sans-serif;
+  color: #5a5a5a;
 }
 
 .about-cont a {
@@ -626,7 +655,7 @@ p {
     top: 0;
     width: 50%;
     height: 100%;
-    background-image: url(../img/watch-img-2.jpg);
+    background-image: url(../img/example.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center

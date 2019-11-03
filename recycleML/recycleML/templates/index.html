@@ -27,6 +27,8 @@
     <link rel="stylesheet" type="text/css" href="../static/css/style.css">
     <!--responsive css-->
     <link rel="stylesheet" type="text/css" href="../static/css/responsive.css">
+    <!--responsive input image field form-->
+    <link rel="stylesheet" type="text/css" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/wtf-forms.css">
 </head>
 
 <body>
@@ -63,7 +65,7 @@
                                 <a class="nav-link" href="#" data-scroll-nav="3">Faq</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#" data-scroll-nav="4">Review</a>
+                                <a class="nav-link" href="#" data-scroll-nav="4">Reviews</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#" data-scroll-nav="5">Contact</a>
@@ -115,28 +117,43 @@
         <div class="container">
             <div class="row">
                 <!--start about content-->
-                <div class="col-md-6">
+                <div class="col-md-6 align-middle justify-content-center align-self-center">
                     <div class="about-cont">
-                        <h5>About Watch</h5>
-                        <h2>Awesome digital watch can make your life easier</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis
-                            eros. Nullam malesuada erat ut turpis.</p>
-                        <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.
-                            Aenean dignissim pellentesque felis.</p>
-                        <ul>
-                            <li><i class="icofont-check"></i> High Quality Product</li>
-                            <li><i class="icofont-check"></i> Modern And New Design</li>
-                            <li><i class="icofont-check"></i> Multiple Color Available</li>
-                        </ul>
-                        <a href="#product-area">Read More</a>
-                    </div>
+                        <form class="col s12">
+                            <label class="file">
+                                <input type="file" id="file" aria-label="File browser example">
+                                <span class="file-custom"></span>
+                              </label>
+                              <br />
+                              <a href="post" class="white-text">Submit!</a>
+                                </form>
+                            </div>
                 </div>
                 <!--end about content-->
                 <!--start about image-->
                 <div class="col-md-6">
-                    <div class="about-img">
-                        <img src="../static/img/watch-img.jpg" class="img-fluid" alt="" />
-                    </div>
+                        <div class="about-cont">
+                                <h5>Upload a photo</h5>
+                                <h2>Don't just wonder how RecycleML works, try it out yourself</h2>
+                                <p>We have calculated the following for you:</p>
+                                <ul class="red">
+                                        <li id="oneR"><i class="icofont-close-squared-alt"></i> No image has been uploaded yet </li>
+                                        </ul>
+                                        <ul class="green">
+                                    <li id="oneG"><i class="icofont-check"></i> Confidence Levels: 
+                                    <ul class="probs">
+                                        <li> <font size="1">{ p1 } probability of being { n1 }</font> </li>
+                                        <li> <font size="1">{ p2 } probability of being { n2 }</font> </li>
+                                        <li> <font size="1">{ p3 } probability of being { n3 }</font> </li>
+                                        <li> <font size="1">{ p4 } probability of being { n4 }</font> </li>
+                                        <li> <font size="1">{ p5 } probability of being { n5 }</font> </li>
+                                        <li> <font size="1">{ p6 } probability of being { n6 }</font> </li>
+                                    </ul>
+                                    </li>
+                                    <li id="twoG"><i class="icofont-check"></i> This image is most likely { n1 }. </li>
+                                    <li id="threeG"><i class="icofont-check"></i> The second most likely waste category is { n2 } </li>
+                                </ul>
+                            </div>
                 </div>
                 <!--end about image-->
             </div>
@@ -151,7 +168,7 @@
                 <!--start video content-->
                 <div class="col-md-6 offset-md-6">
                     <div class="video-cont">
-                        <h5>Product Demo</h5>
+                        <h5>More information</h5>
                         <h2>Watch the demo video for more information about our products.</h2>
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis
                             eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit,
@@ -168,8 +185,6 @@
         <div class="video-player-wrap">
             <div class="video-player d-table text-center">
                 <div class="d-table-cell align-middle">
-                    <a class="popup-video" href="https://www.youtube.com/watch?v=clXBiR01kUM"><i
-                            class="icofont-play"></i></a>
                 </div>
             </div>
         </div>
@@ -294,8 +309,8 @@
                                 <img src="../static/img/data/train/metal/metal7.jpg" class="img-fluid" alt="">
                             </div>
                             <div class="client-comnt">
-                                <h5>Above is a metal can, from our Kagggle dataset, we tested our image 
-                                    classification script to see which compartment would best fit the image.
+                                <h5>Above is a metal can (from our Kagggle dataset) which we tested our image 
+                                    classification script on to see which compartment would best fit the image.
                                     The result was metal.</h5>
                                 <span><i class="icofont-star"></i><i class="icofont-star"></i><i
                                         class="icofont-star"></i><i class="icofont-star"></i><i
@@ -303,7 +318,7 @@
                             </div>
                             <div class="client-details">
                                 <h4>- Confidence: 97.44%</h4>
-                                <p>product marketer</p>
+                                <p>Actual Compartment: metal</p>
                             </div>
                         </div>
                         <!--end testimonial single-->
@@ -313,8 +328,8 @@
                                 <img src="../static/img/data/train/glass/glass88.jpg" class="img-fluid" alt="">
                             </div>
                             <div class="client-comnt">
-                                <h5>Above is a glass bottle, from our Kagggle dataset, we tested our image 
-                                        classification script to see which compartment would best fit the image.
+                                <h5>Above is a glass bottle (from our Kagggle dataset) which we tested our image 
+                                        classification script on to see which compartment would best fit the image.
                                         The result was glass.
                                 </h5>
                                 <span><i class="icofont-star"></i><i class="icofont-star"></i><i
@@ -323,7 +338,7 @@
                             </div>
                             <div class="client-details">
                                 <h4>- Confidence: 99.91%</h4>
-                                <p>affiliate marketer</p>
+                                <p>Actual Compartment: glass</p>
                             </div>
                         </div>
                         <!--end testimonial single-->
@@ -333,8 +348,8 @@
                                     <img src="../static/img/data/train/cardboard/cardboard200.jpg" class="img-fluid" alt="">
                                 </div>
                                 <div class="client-comnt">
-                                    <h5>Above is a cardboard box, from our Kagggle dataset, we tested our image 
-                                            classification script to see which compartment would best fit the image.
+                                    <h5>Above is a cardboard box (from our Kagggle dataset) which we tested our image 
+                                            classification script on to see which compartment would best fit the image.
                                             The result was cardboard.
                                     </h5>
                                     <span><i class="icofont-star"></i><i class="icofont-star"></i><i
@@ -343,7 +358,7 @@
                                 </div>
                                 <div class="client-details">
                                 <h4>- Confidence: 99.92%</h4>
-                                    <p>affiliate marketer</p>
+                                    <p>Actual Compartment: cardboard</p>
                                 </div>
                             </div>
                             <!--end testimonial single-->
@@ -353,8 +368,8 @@
                                     <img src="../static/img/data/train/paper/paper208.jpg" class="img-fluid" alt="">
                                 </div>
                                 <div class="client-comnt">
-                                    <h5>Above is a newspaper, from our Kagggle dataset, we tested our image 
-                                            classification script to see which compartment would best fit the image.
+                                    <h5>Above is a newspaper (from our Kagggle dataset) which we tested our image 
+                                            classification script on to see which compartment would best fit the image.
                                             The result was paper.
                                     </h5>
                                     <span><i class="icofont-star"></i><i class="icofont-star"></i><i
@@ -363,7 +378,7 @@
                                 </div>
                                 <div class="client-details">
                                 <h4>- Confidence: 99.63%</h4>
-                                    <p>affiliate marketer</p>
+                                    <p>Actual Compartment: paper</p>
                                 </div>
                             </div>
                             <!--end testimonial single-->
@@ -373,8 +388,8 @@
                                     <img src="../static/img/data/train/plastic/plastic151.jpg" class="img-fluid" alt="">
                                 </div>
                                 <div class="client-comnt">
-                                    <h5>Above is a plastic milk bottle, from our Kagggle dataset, we tested our image 
-                                            classification script to see which compartment would best fit the image.
+                                    <h5>Above is a plastic milk bottle (from our Kagggle dataset) which we tested our image 
+                                            classification script on to see which compartment would best fit the image.
                                             The result was plastic.
                                     </h5>
                                     <span><i class="icofont-star"></i><i class="icofont-star"></i><i
@@ -383,7 +398,7 @@
                                 </div>
                                 <div class="client-details">
                                 <h4>- Confidence: 93.08%</h4>
-                                    <p>affiliate marketer</p>
+                                    <p>Actual Compartment: plastic</p>
                                 </div>
                             </div>
                             <!--end testimonial single-->
@@ -393,8 +408,8 @@
                                 <img src="../static/img/data/train/trash/trash114.jpg" class="img-fluid" alt="">
                             </div>
                             <div class="client-comnt">
-                                <h5>Above is a Nutter Butter Wrapper, from our Kagggle dataset, we tested our image 
-                                        classification script to see which compartment would best fit the image.
+                                <h5>Above is a Nutter Butter Wrapper (from our Kagggle dataset) which we tested our image 
+                                        classification script on to see which compartment would best fit the image.
                                         The result was trash.
                                 </h5>
                                 <span><i class="icofont-star"></i><i class="icofont-star"></i><i
@@ -403,7 +418,7 @@
                             </div>
                             <div class="client-details">
                                     <h4>- Confidence: 93.43%</h4>
-                                <p>product manager</p>
+                                <p>Actual Compartment: trash</p>
                             </div>
                         </div>
                         <!--end testimonial single-->
