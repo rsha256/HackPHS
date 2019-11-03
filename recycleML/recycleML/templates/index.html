@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="keywords"
         content="waste, classification, recycle, environment, application, technology, waste classification" />
-    <meta name="description"
-        content="RecycleML — Responsive application which classifies waste to help you recycle without thinking.">
+    <meta name="description" content="RecycleML — Responsive application which classifies waste to help you recycle without thinking.">
     <meta name="RecycleML"
         content="RecycleML — Responsive application which classifies waste to help you recycle without thinking." />
     <title>RecycleML - {{ title }}</title>
@@ -95,17 +94,14 @@
                 <div class="col-md-7">
                     <div class="caption">
                         <h1 class="text-white">Simple Waste Classification</h1>
-                        <p class="text-white">You just finished enjoying your favorite chocalate bar.
-                            However, now you have to trash the wrapper from your premiere commodity.
-                            Already annoyed at the fact that you have finished your pleasurable snack, you now have
-                            to walk up find a trash can and throw the wrapper into the garbadge.
-                            For you, you are most likeliest to throw it into the nearest bin you can find.
-                            You are statistically unlikely to ponder whether the paper wrapper should be placed in the
-                            recycling bin or the garbadge bin.
-                            The blue color and nearby locality to another garbadge can help you realize you should
-                            recycle there; however, according to the
-                            The American Recycling Center, a high majority of all recycled material is simply office
-                            paper.
+                        <p class="text-white">You just finished enjoying your favorite chocalate bar. 
+                            However, now you have to trash the wrapper from your premiere commodity. 
+                            Already annoyed at the fact that you have finished your pleasurable snack, you now have 
+                            to walk up find a trash can and throw the wrapper into the garbadge. 
+                            For you, you are most likeliest to throw it into the nearest bin you can find. 
+                            You are statistically unlikely to ponder whether the paper wrapper should be placed in the recycling bin or the garbadge bin. 
+                            The blue color and nearby locality to another garbadge can help you realize you should recycle there; however, according to the 
+                            The American Recycling Center, a high majority of all recycled material is simply office paper.
                             With an over 80% classification rate, we aim to elevate people's recycling habits!</p>
                         <div class="hero-btn">
                             <a class="bg" href="#about-area">Get Started!</a><a href="#">About Us</a>
@@ -125,50 +121,41 @@
                 <!--start about content-->
                 <div class="col-md-6 align-middle justify-content-center align-self-center">
                     <div class="about-cont">
-                        <form action="/handleUpload" class="col s12" method="post" enctype="multipart/form-data">
-                            Choose the file: <input type="file" name="photo" /><br />
-                            <input class="sub" type="submit" value="Upload" />
-                        </form>
-                    </div>
+                        <form class="col s12">
+                            <label class="file">
+                                <input type="file" id="file" aria-label="File browser example">
+                                <span class="file-custom"></span>
+                              </label>
+                              <br />
+                              <a href="/upload" class="white-text">Submit!</a>
+                                </form>
+                            </div>
                 </div>
                 <!--end about content-->
                 <!--start about image-->
                 <div class="col-md-6">
-                    <div class="about-cont">
-                        <h5>Upload a photo</h5>
-                        <h2>Don't just wonder how RecycleML works, try it out yourself</h2>
-                        <p>We have calculated the following for you:</p>
-                        <ul class="red">
-                            <li id="oneR"><i class="icofont-close-squared-alt"></i> No image has been uploaded yet </li>
-                        </ul>
-                        <ul class="green">
-                            <li id="oneG"><i class="icofont-check"></i> Confidence Levels:
-                                <ul class="probs">
-                                    <li>
-                                        <font size="1">{{ p1 }} probability of being {{ n1 }}</font>
+                        <div class="about-cont">
+                                <h5>Upload a photo</h5>
+                                <h2>Don't just wonder how RecycleML works, try it out yourself</h2>
+                                <p>We have calculated the following for you:</p>
+                                <ul class="red">
+                                        <li id="oneR"><i class="icofont-close-squared-alt"></i> No image has been uploaded yet </li>
+                                        </ul>
+                                        <ul class="green">
+                                    <li id="oneG"><i class="icofont-check"></i> Confidence Levels: 
+                                    <ul class="probs">
+                                        <li> <font size="1">{ p1 } probability of being { n1 }</font> </li>
+                                        <li> <font size="1">{ p2 } probability of being { n2 }</font> </li>
+                                        <li> <font size="1">{ p3 } probability of being { n3 }</font> </li>
+                                        <li> <font size="1">{ p4 } probability of being { n4 }</font> </li>
+                                        <li> <font size="1">{ p5 } probability of being { n5 }</font> </li>
+                                        <li> <font size="1">{ p6 } probability of being { n6 }</font> </li>
+                                    </ul>
                                     </li>
-                                    <li>
-                                        <font size="1">{{ p2 }} probability of being {{ n2 }}</font>
-                                    </li>
-                                    <li>
-                                        <font size="1">{{ p3 }} probability of being {{ n3 }}</font>
-                                    </li>
-                                    <li>
-                                        <font size="1">{{ p4 }} probability of being {{ n4 }}</font>
-                                    </li>
-                                    <li>
-                                        <font size="1">{{ p5 }} probability of being {{ n5 }}</font>
-                                    </li>
-                                    <li>
-                                        <font size="1">{{ p6 }} probability of being {{ n6 }}</font>
-                                    </li>
+                                    <li id="twoG"><i class="icofont-check"></i> This image is most likely { n1 }. </li>
+                                    <li id="threeG"><i class="icofont-check"></i> The second most likely waste category is { n2 } </li>
                                 </ul>
-                            </li>
-                            <li id="twoG"><i class="icofont-check"></i> This image is most likely {{ n1 }}. </li>
-                            <li id="threeG"><i class="icofont-check"></i> The second most likely waste category is
-                                {{ n2 }} </li>
-                        </ul>
-                    </div>
+                            </div>
                 </div>
                 <!--end about image-->
             </div>
@@ -179,8 +166,8 @@
     <br />
     <section id="video-area" data-scroll-index="2">
         <div class="container">
-            <br />
-            <br />
+        <br />
+        <br />
 
             <div class="row">
                 <!--start video content-->
@@ -188,8 +175,8 @@
                     <div class="video-cont">
                         <h5>More information</h5>
                         <h2>Was the output you recieved inaccurate?</h2>
-                        <p>If the predicted output was incorrect, press the
-                            button below to help train our model and improve
+                        <p>If the predicted output was incorrect, press the 
+                            button below to help train our model and improve 
                             future predictions.</p>
                         <a href="#contact-area">Incorrect Output?</a>
                     </div>
@@ -237,8 +224,8 @@
     <!--end faq area-->
     <!--start testimonial area-->
     <section id="testi-area" class="bg-gray" data-scroll-index="3">
-        <br />
-        <div class="container">
+            <br />
+            <div class="container">
             <div class="row">
                 <!--start heading-->
                 <div class="col-lg-8 offset-lg-2">
@@ -259,7 +246,7 @@
                                 <img src="../static/img/data/train/metal/metal7.jpg" class="img-fluid" alt="">
                             </div>
                             <div class="client-comnt">
-                                <h5>Above is a metal can (from our Kaggle dataset) which we tested our image
+                                <h5>Above is a metal can (from our Kaggle dataset) which we tested our image 
                                     classification script on to see which compartment would best fit the image.
                                     The result was metal.</h5>
                                 <span><i class="icofont-star"></i><i class="icofont-star"></i><i
@@ -278,9 +265,9 @@
                                 <img src="../static/img/data/train/glass/glass88.jpg" class="img-fluid" alt="">
                             </div>
                             <div class="client-comnt">
-                                <h5>Above is a glass bottle (from our Kaggle dataset) which we tested our image
-                                    classification script on to see which compartment would best fit the image.
-                                    The result was glass.
+                                <h5>Above is a glass bottle (from our Kaggle dataset) which we tested our image 
+                                        classification script on to see which compartment would best fit the image.
+                                        The result was glass.
                                 </h5>
                                 <span><i class="icofont-star"></i><i class="icofont-star"></i><i
                                         class="icofont-star"></i><i class="icofont-star"></i><i
@@ -294,80 +281,80 @@
                         <!--end testimonial single-->
                         <!--start testimonial single-->
                         <div class="testi-single text-center">
-                            <div class="client-img">
-                                <img src="../static/img/data/train/cardboard/cardboard200.jpg" class="img-fluid" alt="">
-                            </div>
-                            <div class="client-comnt">
-                                <h5>Above is a cardboard box (from our Kaggle dataset) which we tested our image
-                                    classification script on to see which compartment would best fit the image.
-                                    The result was cardboard.
-                                </h5>
-                                <span><i class="icofont-star"></i><i class="icofont-star"></i><i
-                                        class="icofont-star"></i><i class="icofont-star"></i><i
-                                        class="icofont-star"></i></span>
-                            </div>
-                            <div class="client-details">
+                                <div class="client-img">
+                                    <img src="../static/img/data/train/cardboard/cardboard200.jpg" class="img-fluid" alt="">
+                                </div>
+                                <div class="client-comnt">
+                                    <h5>Above is a cardboard box (from our Kaggle dataset) which we tested our image 
+                                            classification script on to see which compartment would best fit the image.
+                                            The result was cardboard.
+                                    </h5>
+                                    <span><i class="icofont-star"></i><i class="icofont-star"></i><i
+                                            class="icofont-star"></i><i class="icofont-star"></i><i
+                                            class="icofont-star"></i></span>
+                                </div>
+                                <div class="client-details">
                                 <h4>- Confidence: 99.92%</h4>
-                                <p>Actual Compartment: cardboard</p>
+                                    <p>Actual Compartment: cardboard</p>
+                                </div>
                             </div>
-                        </div>
-                        <!--end testimonial single-->
-                        <!--start testimonial single-->
+                            <!--end testimonial single-->
+                            <!--start testimonial single-->
                         <div class="testi-single text-center">
-                            <div class="client-img">
-                                <img src="../static/img/data/train/paper/paper208.jpg" class="img-fluid" alt="">
-                            </div>
-                            <div class="client-comnt">
-                                <h5>Above is a newspaper (from our Kaggle dataset) which we tested our image
-                                    classification script on to see which compartment would best fit the image.
-                                    The result was paper.
-                                </h5>
-                                <span><i class="icofont-star"></i><i class="icofont-star"></i><i
-                                        class="icofont-star"></i><i class="icofont-star"></i><i
-                                        class="icofont-star"></i></span>
-                            </div>
-                            <div class="client-details">
+                                <div class="client-img">
+                                    <img src="../static/img/data/train/paper/paper208.jpg" class="img-fluid" alt="">
+                                </div>
+                                <div class="client-comnt">
+                                    <h5>Above is a newspaper (from our Kaggle dataset) which we tested our image 
+                                            classification script on to see which compartment would best fit the image.
+                                            The result was paper.
+                                    </h5>
+                                    <span><i class="icofont-star"></i><i class="icofont-star"></i><i
+                                            class="icofont-star"></i><i class="icofont-star"></i><i
+                                            class="icofont-star"></i></span>
+                                </div>
+                                <div class="client-details">
                                 <h4>- Confidence: 99.63%</h4>
-                                <p>Actual Compartment: paper</p>
+                                    <p>Actual Compartment: paper</p>
+                                </div>
                             </div>
-                        </div>
-                        <!--end testimonial single-->
-                        <!--start testimonial single-->
+                            <!--end testimonial single-->
+                            <!--start testimonial single-->
                         <div class="testi-single text-center">
-                            <div class="client-img">
-                                <img src="../static/img/data/train/plastic/plastic151.jpg" class="img-fluid" alt="">
-                            </div>
-                            <div class="client-comnt">
-                                <h5>Above is a plastic milk bottle (from our Kaggle dataset) which we tested our image
-                                    classification script on to see which compartment would best fit the image.
-                                    The result was plastic.
-                                </h5>
-                                <span><i class="icofont-star"></i><i class="icofont-star"></i><i
-                                        class="icofont-star"></i><i class="icofont-star"></i><i
-                                        class="icofont-star"></i></span>
-                            </div>
-                            <div class="client-details">
+                                <div class="client-img">
+                                    <img src="../static/img/data/train/plastic/plastic151.jpg" class="img-fluid" alt="">
+                                </div>
+                                <div class="client-comnt">
+                                    <h5>Above is a plastic milk bottle (from our Kaggle dataset) which we tested our image 
+                                            classification script on to see which compartment would best fit the image.
+                                            The result was plastic.
+                                    </h5>
+                                    <span><i class="icofont-star"></i><i class="icofont-star"></i><i
+                                            class="icofont-star"></i><i class="icofont-star"></i><i
+                                            class="icofont-star"></i></span>
+                                </div>
+                                <div class="client-details">
                                 <h4>- Confidence: 93.08%</h4>
-                                <p>Actual Compartment: plastic</p>
+                                    <p>Actual Compartment: plastic</p>
+                                </div>
                             </div>
-                        </div>
-                        <!--end testimonial single-->
+                            <!--end testimonial single-->
                         <!--start testimonial single-->
                         <div class="testi-single text-center">
                             <div class="client-img">
                                 <img src="../static/img/data/train/trash/trash114.jpg" class="img-fluid" alt="">
                             </div>
                             <div class="client-comnt">
-                                <h5>Above is a Nutter Butter Wrapper (from our Kaggle dataset) which we tested our image
-                                    classification script on to see which compartment would best fit the image.
-                                    The result was trash.
+                                <h5>Above is a Nutter Butter Wrapper (from our Kaggle dataset) which we tested our image 
+                                        classification script on to see which compartment would best fit the image.
+                                        The result was trash.
                                 </h5>
                                 <span><i class="icofont-star"></i><i class="icofont-star"></i><i
                                         class="icofont-star"></i><i class="icofont-star"></i><i
                                         class="icofont-star"></i></span>
                             </div>
                             <div class="client-details">
-                                <h4>- Confidence: 93.43%</h4>
+                                    <h4>- Confidence: 93.43%</h4>
                                 <p>Actual Compartment: trash</p>
                             </div>
                         </div>
@@ -380,14 +367,14 @@
     <!--end testimonial area-->
     <!--start contact area-->
     <section id="contact-area" data-scroll-index="4">
-        <br />
-        <br />
-        <div class="container">
+            <br />
+            <br />
+            <div class="container">
             <div class="row">
                 <div class="col-md-5">
                     <div class="heading">
                         <h5>Need Help</h5>
-                        <h2>Contact us</h2>
+                        <h2>Contact us</h2>  
                     </div>
                     <div class="contact-info">
                         <h5>Address:</h5>
@@ -437,33 +424,33 @@
         </div>
     </section>
     <!--end contact area-->
-    <!--start newsletter area-->
-    <section id="newsletter-area" class="bg" class="default" data-scroll-index="5">
-        <br />
-        <div class="container">
-            <div class="row">
-                <!--start newsletter content-->
-                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
-                    <div class="newsletter-box">
-                        <div class="heading text-center">
-                            <h5 class="text-light">Get Up To Date</h5>
-                            <h2 class="text-white">Subscribe our newsletter</h2>
+        <!--start newsletter area-->
+        <section id="newsletter-area" class="bg" class="default" data-scroll-index="5">
+                <br />
+            <div class="container">
+                <div class="row">
+                    <!--start newsletter content-->
+                    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+                        <div class="newsletter-box">
+                            <div class="heading text-center">
+                                <h5 class="text-light">Get Up To Date</h5>
+                                <h2 class="text-white">Subscribe our newsletter</h2>
+                            </div>
+                            <!--start newsletter form-->
+                            <div class="newsletter-form">
+                                <form action="#" method="post">
+                                    <input type="email" class="form-control" id="news-email" placeholder="Enter your email">
+                                    <button type="submit">Subscribe Now</button>
+                                </form>
+                            </div>
+                            <!--end newsletter form-->
                         </div>
-                        <!--start newsletter form-->
-                        <div class="newsletter-form">
-                            <form action="#" method="post">
-                                <input type="email" class="form-control" id="news-email" placeholder="Enter your email">
-                                <button type="submit">Subscribe Now</button>
-                            </form>
-                        </div>
-                        <!--end newsletter form-->
                     </div>
+                    <!--end newsletter content-->
                 </div>
-                <!--end newsletter content-->
             </div>
-        </div>
-    </section>
-    <!--end newsletter area-->
+        </section>
+        <!--end newsletter area-->
     <!--start footer-->
     <footer id="footer">
         <div class="container">
@@ -487,12 +474,6 @@
         </div>
     </footer>
     <!--end footer-->
-    <script type="text/javascript">
-        document.querySelector(".sub").addEventListener("click", function () {
-            document.querySelector(".red").style.display = "none";
-            document.querySelector(".green").style.display = "block";
-        });
-    </script>
     <!--jQuery js-->
     <script src="../static/js/jquery-3.3.1.min.js"></script>
     <!--proper js-->
@@ -512,5 +493,4 @@
     <!--main js-->
     <script src="../static/js/custom.js"></script>
 </body>
-
 </html>
