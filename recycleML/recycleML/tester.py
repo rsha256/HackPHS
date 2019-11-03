@@ -7,9 +7,9 @@ import warnings
 warnings.filterwarnings("ignore")
 
 def get_classification(image_name):
-    path = Path(os.getcwd())/"static/img/data"
+    path2 = Path(os.getcwd())/"static/img/data"
     tfms = get_transforms(do_flip=True,flip_vert=True)
-    data = ImageDataBunch.from_folder(path,test="test",ds_tfms=tfms,bs=16)
+    data = ImageDataBunch.from_folder(path2, test="test", ds_tfms=tfms, bs=16)
     learn = create_cnn(data,models.resnet34,metrics=error_rate)
     learn.load("trained_model")
 
@@ -58,4 +58,4 @@ def get_classification(image_name):
 
     return [mainPred.capitalize(), mainPerc, secPred.capitalize(), secPerc, thirdPred.capitalize(), thirdPerc, fourthPred.capitalize(), fourthPerc, fifthPred.capitalize(), fifthPerc, lastPred.capitalize(), lastPerc]
 
-print(get_classification('static/img/data/test/paper84.jpg'))
+# print(get_classification('static/img/data/test/paper84.jpg'))
