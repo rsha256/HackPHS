@@ -121,14 +121,10 @@
                 <!--start about content-->
                 <div class="col-md-6 align-middle justify-content-center align-self-center">
                     <div class="about-cont">
-                        <form class="col s12">
-                            <label class="file">
-                                <input type="file" id="file" aria-label="File browser example">
-                                <span class="file-custom"></span>
-                              </label>
-                              <br />
-                              <a href="/upload" class="white-text">Submit!</a>
-                                </form>
+                        <form action="/handleUpload" class="col s12" method="post" enctype="multipart/form-data">
+                            Choose the file: <input type="file" name="photo" /><br />
+                                <input type="submit" value="Upload" />
+                        </form>
                             </div>
                 </div>
                 <!--end about content-->
@@ -144,16 +140,16 @@
                                         <ul class="green">
                                     <li id="oneG"><i class="icofont-check"></i> Confidence Levels: 
                                     <ul class="probs">
-                                        <li> <font size="1">{ p1 } probability of being { n1 }</font> </li>
-                                        <li> <font size="1">{ p2 } probability of being { n2 }</font> </li>
-                                        <li> <font size="1">{ p3 } probability of being { n3 }</font> </li>
-                                        <li> <font size="1">{ p4 } probability of being { n4 }</font> </li>
-                                        <li> <font size="1">{ p5 } probability of being { n5 }</font> </li>
-                                        <li> <font size="1">{ p6 } probability of being { n6 }</font> </li>
+                                        <li> <font size="1">{{ p1 }} probability of being {{ n1 }}</font> </li>
+                                        <li> <font size="1">{{ p2 }} probability of being {{ n2 }}</font> </li>
+                                        <li> <font size="1">{{ p3 }} probability of being {{ n3 }}</font> </li>
+                                        <li> <font size="1">{{ p4 }} probability of being {{ n4 }}</font> </li>
+                                        <li> <font size="1">{{ p5 }} probability of being {{ n5 }}</font> </li>
+                                        <li> <font size="1">{{ p6 }} probability of being {{ n6 }}</font> </li>
                                     </ul>
                                     </li>
-                                    <li id="twoG"><i class="icofont-check"></i> This image is most likely { n1 }. </li>
-                                    <li id="threeG"><i class="icofont-check"></i> The second most likely waste category is { n2 } </li>
+                                    <li id="twoG"><i class="icofont-check"></i> This image is most likely {{ n1 }}. </li>
+                                    <li id="threeG"><i class="icofont-check"></i> The second most likely waste category is {{ n2 }} </li>
                                 </ul>
                             </div>
                 </div>
@@ -446,6 +442,11 @@
         </div>
     </footer>
     <!--end footer-->
+    <script type="text/javascript">
+    document.querySelector("input").addEventListener("click", function(){
+    document.querySelector("#").style.display = "block";
+});
+    </script>
     <!--jQuery js-->
     <script src="../static/js/jquery-3.3.1.min.js"></script>
     <!--proper js-->

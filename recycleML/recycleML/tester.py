@@ -27,25 +27,35 @@ def get_classification(image_name):
     classifications = ['cardboard', 'glass', 'metal', 'paper', 'plastic', 'trash']
     secPred = classifications[a.index(max(new))]
     secPerc = str(max(new)*100)[:5]+"%"
+    if(max(new)*100 < .001):
+        secPerc = "0%"
     new.remove(max(new))
 
     thirdPred = classifications[a.index(max(new))]
     thirdPerc = str(max(new)*100)[:5]+"%"
+    if(max(new)*100 < .001):
+        thirdPerc = "0%"
     new.remove(max(new))
 
     fourthPred = classifications[a.index(max(new))]
     fourthPerc = str(max(new)*100)[:5]+"%"
+    if(max(new)*100 < .001):
+        fourthPerc = "0%"
     new.remove(max(new))
 
     fifthPred = classifications[a.index(max(new))]
     fifthPerc = str(max(new)*100)[:5]+"%"
+    if(max(new)*100 < .001):
+        fifthPerc = "0%"
     new.remove(max(new))
 
     lastPred = classifications[a.index(max(new))]
     lastPerc = str(max(new)*100)[:5]+"%"
+    if(max(new)*100 < .001):
+        lastPerc = "0%"
     new.remove(max(new))
     #open_image(image_name) <---- ORIGINAL IMAGE THAT WAS SENT IN
 
     return [mainPred.capitalize(), mainPerc, secPred.capitalize(), secPerc, thirdPred.capitalize(), thirdPerc, fourthPred.capitalize(), fourthPerc, fifthPred.capitalize(), fifthPerc, lastPred.capitalize(), lastPerc]
 
-print(get_classification('static/img/data/test/glass143.jpg'))
+print(get_classification('static/img/data/test/paper84.jpg'))
