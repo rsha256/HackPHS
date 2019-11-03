@@ -1,1 +1,1 @@
-web: gunicorn recycleML/recycleML:app
+web: gunicorn recycleML:app
